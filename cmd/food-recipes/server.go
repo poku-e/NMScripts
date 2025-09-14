@@ -89,6 +89,7 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 	})
 
 	// Recipe UI
+
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer
