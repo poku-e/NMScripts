@@ -74,7 +74,22 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 		}
 	})
 
-	// UI
+	// Glyphs UI
+	mux.HandleFunc("/glyphs", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		var buf bytes.Buffer
+		if err := glyphsTmpl.Execute(&buf, nil); err != nil {
+			http.Error(w, "template error", http.StatusInternalServerError)
+			return
+		}
+		if _, err := w.Write(buf.Bytes()); err != nil {
+			fmt.Fprintf(os.Stderr, "error writing response: %v\n", err)
+			return
+		}
+	})
+
+	// Recipe UI
+
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer

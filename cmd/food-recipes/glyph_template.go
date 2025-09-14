@@ -1,0 +1,260 @@
+package main
+
+import "html/template"
+
+var glyphsTmpl = template.Must(template.New("glyphs").Parse(`<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nirvana Glyphs</title>
+<style>
+:root{
+  --mint-25:#daf7ee; --mint-50:#c6f2e6; --mint-100:#a2ecd9;
+  --mint-200:#7de6cc; --mint-300:#58dfbf; --mint-400:#35d9b3;
+  --mint-500:#22d8ad; --mint-600:#17b392; --mint-700:#118b73;
+  --bg-dark-1:#0c2924; --bg-dark-2:#0e312b;
+  --glass-tint:rgba(20,50,45,0.30);
+  --text-900:#e9fffa; --text-700:#b6e6d9; --text-500:#8dd7c6;
+}
+.glyphFont{
+  font-family: ui-monospace, monospace;
+  letter-spacing: 0.02em;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+body{
+  color:var(--text-900);
+  background:
+    radial-gradient(900px 520px at 15% -10%, rgba(53,217,179,0.18), transparent 55%),
+    radial-gradient(800px 480px at 110% 20%, rgba(88,223,191,0.14), transparent 50%),
+    repeating-linear-gradient(45deg,
+      rgba(53,217,179,0.08) 0px, rgba(53,217,179,0.08) 14px,
+      rgba(17,139,115,0.10) 14px, rgba(17,139,115,0.10) 28px),
+    linear-gradient(180deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 100%);
+}
+.container{ min-height:100%; display:flex; align-items:center; justify-content:center; padding:24px; }
+.card{
+  width:min(1000px,92vw); position:relative;
+  backdrop-filter: blur(26px) saturate(120%); -webkit-backdrop-filter: blur(26px) saturate(120%);
+  background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.06)), var(--glass-tint);
+  border:1px solid rgba(180,255,237,0.18); border-radius:24px; padding:28px;
+  box-shadow:0 24px 60px rgba(12,41,36,0.55), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.header{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.badge{
+  background:linear-gradient(145deg,var(--mint-500),var(--mint-300));
+  color:white;font-weight:700;border-radius:12px;padding:6px 10px;font-size:12px;
+  box-shadow:0 8px 20px rgba(34,216,173,0.40);
+}
+h1{font-size:24px;margin:0}
+.section{
+  margin-top:22px; padding:16px; border-radius:18px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05));
+  border:1px solid rgba(255,255,255,0.10);
+}
+.formRow{display:flex; gap:10px; flex-wrap:wrap; align-items:flex-start}
+.inputGlass, textarea.inputGlass{
+  flex:1; min-width:200px; color:var(--text-900);
+  border-radius:14px; border:1px solid rgba(255,255,255,0.10);
+  background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05));
+  padding:12px 14px; font-size:14px; outline:none;
+}
+textarea.inputGlass{ min-height:70px; resize:vertical }
+.inputGlass::placeholder{ color: var(--text-500) }
+.help{ font-size:12px; color:var(--text-700) }
+.help.success{ color:var(--mint-300) }
+.help.err{ color:#ffdede }
+.glyphList{ display:grid; grid-template-columns:1fr; gap:10px; margin-top:10px }
+@media(min-width:720px){ .glyphList{ grid-template-columns:1fr 1fr } }
+.glyphCard{
+  border-radius:16px; padding:12px 14px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.06));
+  border:1px solid rgba(255,255,255,0.10); box-shadow:0 6px 18px rgba(0,0,0,0.18);
+}
+.glyphTitle{ font-weight:700; margin-bottom:6px }
+.glyphSymbols{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size:16px }
+.glyphMeta{ color: var(--text-700); font-size:12px; margin-top:4px }
+.gbtn{
+  border:1px solid rgba(255,255,255,0.10);
+  background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+  color: var(--text-900); border-radius:10px; padding:6px 10px; cursor:pointer; font-size:12px;
+}
+.gbtn:hover{ border-color: rgba(53,217,179,0.45); }
+.glyphPad{ display:inline-flex; flex-direction:column; gap:8px; margin-top:6px }
+.glyphRow{ display:flex; gap:8px }
+.glyphSpacer{ width:12px }
+.glyphBtn{
+  width:44px; height:44px; border-radius:12px;
+  display:grid; place-items:center;
+  font-size:22px; line-height:1; cursor:pointer; color:var(--text-900);
+  border:1px solid rgba(255,255,255,0.12);
+  background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06));
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.25);
+  transition:transform .06s ease, box-shadow .2s ease, border-color .2s ease, background .2s ease;
+}
+.glyphBtn:hover{ border-color: rgba(53,217,179,0.45); box-shadow:0 12px 28px rgba(34,216,173,0.38); }
+.glyphBtn:active{ transform: translateY(1px) }
+.dock {
+  position: fixed;
+  left: 50%;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  display: flex; gap: 8px; padding: 10px; border-radius: 999px; z-index: 50;
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.06)), var(--glass-tint);
+  border: 1px solid rgba(180,255,237,0.18);
+  box-shadow: 0 18px 44px rgba(12,41,36,0.50), inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(22px) saturate(120%); -webkit-backdrop-filter: blur(22px) saturate(120%);
+}
+.dock-btn {
+  appearance: none; border: 1px solid rgba(255,255,255,0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+  color: var(--text-900); border-radius: 999px; padding: 10px 14px;
+  display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600;
+  cursor: pointer; transition: transform .06s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.20);
+  text-decoration: none;
+}
+.dock-btn:hover { border-color: rgba(53,217,179,0.45); box-shadow: 0 10px 22px rgba(34,216,173,0.32); }
+.dock-btn:active { transform: translateY(1px); }
+.dock-btn.active {
+  background: linear-gradient(180deg, rgba(34,216,173,0.22), rgba(34,216,173,0.12));
+  border-color: rgba(53,217,179,0.55); box-shadow: 0 12px 26px rgba(34,216,173,0.40);
+}
+.dock-ico { width: 22px; height: 22px; border-radius: 999px; display: inline-grid; place-items: center; background: rgba(53,217,179,0.18); border: 1px solid rgba(53,217,179,0.35); font-size: 13px; }
+@media (max-width: 520px) { .dock-btn .label { display: none; } .dock-btn { padding: 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <span class="badge">Nirvana</span>
+      <h1>Glyphs</h1>
+    </div>
+    <div class="section">
+      <div class="formRow" style="margin-bottom:10px">
+        <input id="gName" class="inputGlass" type="text" maxlength="64" placeholder="Name (e.g., Sentinel Path)" />
+        <input id="gSymbols" class="inputGlass glyphFont" type="text" maxlength="128" placeholder="Symbols (type or tap below)"/>
+      </div>
+      <div class="glyphPad" id="glyphPad"></div>
+      <div class="formRow" style="margin:8px 0">
+        <textarea id="gDesc" class="inputGlass" maxlength="512" placeholder="Description (optional but recommended)"></textarea>
+      </div>
+      <div class="formRow" style="align-items:center">
+        <button id="gSave" class="gbtn">Save Glyph</button>
+        <span id="gMsg" class="help"></span>
+      </div>
+      <div class="glyphList" id="glyphList"></div>
+    </div>
+  </div>
+</div>
+<nav class="dock" role="navigation" aria-label="Primary">
+  <a class="dock-btn" href="/"><span class="dock-ico">🏠</span><span class="label">Home</span></a>
+  <a class="dock-btn active" href="/glyphs"><span class="dock-ico">🔤</span><span class="label">Glyphs</span></a>
+</nav>
+<script>
+const el = (id) => document.getElementById(id);
+const gName = el('gName');
+const gSymbols = el('gSymbols');
+const gDesc = el('gDesc');
+const gSave = el('gSave');
+const gMsg = el('gMsg');
+const gList = el('glyphList');
+function msg(text, ok){
+  gMsg.textContent = text || '';
+  gMsg.className = ok ? 'help success' : (text ? 'help err' : 'help');
+}
+function glyphCard(g){
+  const d = document.createElement('div'); d.className='glyphCard';
+  const title = document.createElement('div'); title.className='glyphTitle'; title.textContent = g.name;
+  const sym = document.createElement('div'); sym.className='glyphSymbols glyphFont'; sym.textContent = g.symbols;
+  const meta = document.createElement('div'); meta.className='glyphMeta';
+  const created = new Date(g.created_at);
+  meta.textContent = 'Saved ' + created.toLocaleString() + (g.description ? ' • ' + g.description : '');
+  const row = document.createElement('div'); row.style.marginTop = '8px';
+  const copy = document.createElement('button'); copy.className='gbtn'; copy.textContent='Copy Symbols';
+  copy.onclick = async ()=>{ try{ await navigator.clipboard.writeText(g.symbols); msg('Copied to clipboard', true); }catch{ msg('Copy failed', false); } };
+  row.appendChild(copy);
+  d.appendChild(title); d.appendChild(sym); d.appendChild(meta); d.appendChild(row);
+  return d;
+}
+async function loadGlyphs(){
+  try{
+    const r = await fetch('/api/glyphs');
+    if(!r.ok) throw new Error('load failed');
+    const arr = await r.json();
+    gList.innerHTML = '';
+    (arr||[]).forEach(g => gList.appendChild(glyphCard(g)));
+  }catch(e){
+    msg('Failed to load glyphs', false);
+  }
+}
+async function saveGlyph(){
+  msg('', true);
+  const name = gName.value.trim();
+  const symbols = gSymbols.value.trim();
+  const description = gDesc.value.trim();
+  if(!name){ msg('Name is required', false); gName.focus(); return; }
+  if(!symbols){ msg('Symbols are required', false); gSymbols.focus(); return; }
+  try{
+    const r = await fetch('/api/glyphs',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({name, symbols, description})
+    });
+    if(!r.ok){
+      const txt = await r.text();
+      throw new Error(txt || 'save failed');
+    }
+    gName.value=''; gSymbols.value=''; gDesc.value='';
+    await loadGlyphs();
+    msg('Glyph saved', true);
+  }catch(e){
+    msg(e.message || 'Save failed', false);
+  }
+}
+const GLYPH_ROWS = [
+  "ABC",
+  "DEF",
+  "1234567890"
+];
+function insertGlyph(ch){
+  const inp = document.getElementById('gSymbols');
+  const start = inp.selectionStart ?? inp.value.length;
+  const end   = inp.selectionEnd ?? start;
+  const before = inp.value.slice(0, start);
+  const after  = inp.value.slice(end);
+  inp.value = before + ch + after;
+  const pos = start + ch.length;
+  try { inp.setSelectionRange(pos, pos); } catch {}
+  inp.focus();
+}
+function renderGlyphPad(){
+  const pad = document.getElementById('glyphPad');
+  pad.innerHTML = '';
+  GLYPH_ROWS.forEach(row => {
+    const rowEl = document.createElement('div');
+    rowEl.className = 'glyphRow';
+    Array.from(row).forEach(ch => {
+      if (ch === ' ') {
+        const sp = document.createElement('div'); sp.className = 'glyphSpacer'; rowEl.appendChild(sp); return;
+      }
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'glyphBtn glyphFont';
+      b.textContent = ch;
+      b.title = ch;
+      b.addEventListener('click', () => insertGlyph(ch));
+      rowEl.appendChild(b);
+    });
+    pad.appendChild(rowEl);
+  });
+}
+renderGlyphPad();
+loadGlyphs();
+gSave.onclick = saveGlyph;
+</script>
+</body>
+</html>`))
