@@ -138,6 +138,9 @@ textarea.inputGlass{ min-height:70px; resize:vertical }
       <div class="formRow" style="margin:8px 0">
         <textarea id="gDesc" class="inputGlass" maxlength="512" placeholder="Description (optional but recommended)"></textarea>
       </div>
+      <div class="formRow" style="margin:8px 0">
+        <input id="gPhoto" class="inputGlass" type="file" accept="image/*" />
+      </div>
       <div class="formRow" style="align-items:center">
         <button id="gSave" class="gbtn">Save Glyph</button>
         <span id="gMsg" class="help"></span>
@@ -156,6 +159,7 @@ const el = (id) => document.getElementById(id);
 const gName = el('gName');
 const gSymbols = el('gSymbols');
 const gDesc = el('gDesc');
+const gPhoto = el('gPhoto');
 const gSave = el('gSave');
 const gMsg = el('gMsg');
 const gList = el('glyphList');
@@ -170,11 +174,16 @@ function glyphCard(g){
   const meta = document.createElement('div'); meta.className='glyphMeta';
   const created = new Date(g.created_at);
   meta.textContent = 'Saved ' + created.toLocaleString() + (g.description ? ' • ' + g.description : '');
+  let img;
+  if(g.photo){
+    img = document.createElement('img');
+    img.src = g.photo; img.alt = g.name; img.style.maxWidth='100%'; img.style.borderRadius='8px';
+  }
   const row = document.createElement('div'); row.style.marginTop = '8px';
   const copy = document.createElement('button'); copy.className='gbtn'; copy.textContent='Copy Symbols';
   copy.onclick = async ()=>{ try{ await navigator.clipboard.writeText(g.symbols); msg('Copied to clipboard', true); }catch{ msg('Copy failed', false); } };
   row.appendChild(copy);
-  d.appendChild(title); d.appendChild(sym); d.appendChild(meta); d.appendChild(row);
+  d.appendChild(title); d.appendChild(sym); d.appendChild(meta); if(img) d.appendChild(img); d.appendChild(row);
   return d;
 }
 async function loadGlyphs(){
@@ -196,16 +205,17 @@ async function saveGlyph(){
   if(!name){ msg('Name is required', false); gName.focus(); return; }
   if(!symbols){ msg('Symbols are required', false); gSymbols.focus(); return; }
   try{
-    const r = await fetch('/api/glyphs',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({name, symbols, description})
-    });
+    const fd = new FormData();
+    fd.append('name', name);
+    fd.append('symbols', symbols);
+    fd.append('description', description);
+    if(gPhoto.files[0]) fd.append('photo', gPhoto.files[0]);
+    const r = await fetch('/api/glyphs',{ method:'POST', body: fd });
     if(!r.ok){
       const txt = await r.text();
       throw new Error(txt || 'save failed');
     }
-    gName.value=''; gSymbols.value=''; gDesc.value='';
+    gName.value=''; gSymbols.value=''; gDesc.value=''; gPhoto.value='';
     await loadGlyphs();
     msg('Glyph saved', true);
   }catch(e){

@@ -1,10 +1,16 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"image"
+	_ "image/gif"
+	"image/jpeg"
+	_ "image/png"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 	"sync"
@@ -19,6 +25,7 @@ type Glyph struct {
 	Name        string    `json:"name"`
 	Symbols     string    `json:"symbols"`     // raw glyph string
 	Description string    `json:"description"` // free text
+	Photo       string    `json:"photo,omitempty"`
 	CreatedAt   time.Time `json:"created_at"`
 }
 
@@ -75,7 +82,7 @@ func (gs *GlyphStore) List() []Glyph {
 	return out
 }
 
-func (gs *GlyphStore) Add(name, symbols, desc string) (Glyph, error) {
+func (gs *GlyphStore) Add(name, symbols, desc string, photo []byte) (Glyph, error) {
 	name = strings.TrimSpace(name)
 	symbols = strings.TrimSpace(symbols)
 	desc = strings.TrimSpace(desc)
@@ -102,6 +109,30 @@ func (gs *GlyphStore) Add(name, symbols, desc string) (Glyph, error) {
 		Symbols:     symbols,
 		Description: desc,
 		CreatedAt:   time.Now().UTC(),
+	}
+
+	if len(photo) > 0 {
+		img, _, err := image.Decode(bytes.NewReader(photo))
+		if err != nil {
+			return Glyph{}, fmt.Errorf("invalid photo: %w", err)
+		}
+		imgDir := filepath.Join(filepath.Dir(gs.Path), "glyph-images")
+		if err := os.MkdirAll(imgDir, 0o755); err != nil {
+			return Glyph{}, err
+		}
+		fp := filepath.Join(imgDir, g.ID+".jpg")
+		f, err := os.Create(fp)
+		if err != nil {
+			return Glyph{}, err
+		}
+		if err := jpeg.Encode(f, img, &jpeg.Options{Quality: 80}); err != nil {
+			f.Close()
+			return Glyph{}, err
+		}
+		if err := f.Close(); err != nil {
+			return Glyph{}, err
+		}
+		g.Photo = "/glyph-images/" + g.ID + ".jpg"
 	}
 
 	gs.mu.Lock()

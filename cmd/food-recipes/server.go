@@ -4,9 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 )
@@ -25,6 +27,12 @@ type glyphCreateReq struct {
 
 func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux := http.NewServeMux()
+
+	imgDir := filepath.Join(filepath.Dir(gs.Path), "glyph-images")
+	if err := os.MkdirAll(imgDir, 0o755); err != nil {
+		return err
+	}
+	mux.Handle("/glyph-images/", http.StripPrefix("/glyph-images/", http.FileServer(http.Dir(imgDir))))
 
 	// Recipes API
 	mux.HandleFunc("/api/suggest", func(w http.ResponseWriter, r *http.Request) {
@@ -97,12 +105,41 @@ func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 			writeJSON(w, gs.List())
 			return
 		case http.MethodPost:
+			ct := r.Header.Get("Content-Type")
+			if strings.HasPrefix(ct, "multipart/form-data") {
+				if err := r.ParseMultipartForm(10 << 20); err != nil {
+					http.Error(w, "invalid form", http.StatusBadRequest)
+					return
+				}
+				name := r.FormValue("name")
+				symbols := r.FormValue("symbols")
+				desc := r.FormValue("description")
+				var photo []byte
+				if file, _, err := r.FormFile("photo"); err == nil {
+					defer file.Close()
+					photo, err = io.ReadAll(io.LimitReader(file, 10<<20))
+					if err != nil {
+						http.Error(w, "invalid photo", http.StatusBadRequest)
+						return
+					}
+				} else if err != http.ErrMissingFile {
+					http.Error(w, "invalid photo", http.StatusBadRequest)
+					return
+				}
+				g, err := gs.Add(name, symbols, desc, photo)
+				if err != nil {
+					http.Error(w, err.Error(), http.StatusBadRequest)
+					return
+				}
+				writeJSON(w, g)
+				return
+			}
 			var req glyphCreateReq
 			if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
 				http.Error(w, "invalid json", http.StatusBadRequest)
 				return
 			}
-			g, err := gs.Add(req.Name, req.Symbols, req.Description)
+			g, err := gs.Add(req.Name, req.Symbols, req.Description, nil)
 			if err != nil {
 				http.Error(w, err.Error(), http.StatusBadRequest)
 				return
