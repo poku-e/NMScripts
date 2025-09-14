@@ -13,9 +13,14 @@
   --glass-tint:rgba(20,50,45,0.30);
   --text-900:#e9fffa; --text-700:#b6e6d9; --text-500:#8dd7c6;
 }
+@font-face{
+  font-family:"GlyphsMono";
+  src:url("/fonts/GlyphsMono.woff2") format("woff2");
+  font-display:swap;
+}
 .glyphFont{
-  font-family: ui-monospace, monospace;
-  letter-spacing: 0.02em;
+  font-family:"GlyphsMono","Glyphs-Mono","Glyphs Mono", ui-monospace, monospace;
+  letter-spacing:0.02em;
 }
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
