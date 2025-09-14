@@ -35,7 +35,16 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 		}
 		parts := splitCSVLike(have)
 		mapped, unknown := db.mapUserIngredients(parts)
+		if mapped == nil {
+			mapped = []string{}
+		}
+		if unknown == nil {
+			unknown = []string{}
+		}
 		sugs := db.suggest(mapped)
+		if sugs == nil {
+			sugs = []Recipe{}
+		}
 
 		resp := apiResp{
 			Mapped:       mapped,
