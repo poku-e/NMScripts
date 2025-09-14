@@ -1,0 +1,1324 @@
+input1_name,input1_qty,input2_name,input2_qty,input3_name,input3_qty,output_name,output_qty
+Wild Yeast,1,,,,,Wild Yeast,1
+Chromatic Metal,1,,,,,Silicon Egg,1
+Impulse Beans,1,,,,,Bittersweet Cocoa,1
+Fireberry,1,,,,,Fire Water,1
+Frozen Tubers,1,,,,,Steamed Vegetables,1
+Jade Peas,1,,,,,Steamed Vegetables,1
+Heptaploid Wheat,1,,,,,Refined Flour,1
+Sweetroot,1,,,,,Processed Sugar,1
+Pulpy Roots,1,,,,,Root Juice,1
+Grahberry,1,,,,,Processed Sugar,1
+Aloe Flesh,1,,,,,Refreshing Drink,1
+Hexaberry,1,,,,,Steamed Vegetables,1
+Pilgrimberry,1,,,,,Pilgrim's Tonic,1
+Solartillo,1,,,,,Steamed Vegetables,1
+Glass Grains,1,,,,,Refined Flour,1
+Non-Toxic Mushroom,1,,,,,Steamed Vegetables,1
+Sievert Beans,1,,,,,Steamed Vegetables,1
+Cactus Nectar,1,,,,,Processed Sugar,1
+Marrow Flesh,1,,,,,Steamed Vegetables,1
+Star Bulb,1,,,,,Pilgrimberry,1
+Solanium,1,,,,,Solartillo,1
+Frost Crystal,1,,,,,Glass Grains,1
+Fungal Mould,1,,,,,Non-Toxic Mushroom,1
+Gamma Root,1,,,,,Sievert Beans,1
+Cactus Flesh,1,,,,,Cactus Nectar,1
+Faecium,1,,,,,Wild Yeast,1
+Mordite,1,,,,,Meat Flakes,1
+Marrow Bulb,1,,,,,Marrow Flesh,1
+Kelp Sac,1,,,,,Kelp Rice,1
+Kelp Rice,1,,,,,Refined Flour,1
+Larval Core,1,,,,,Baked Eggs,1
+Creature Egg,1,,,,,Baked Eggs,1
+Tall Eggs,1,,,,,Baked Eggs,1
+Giant Egg,1,,,,,Baked Eggs,1
+Larval Core,1,Processed Sugar,1,,,Delicate Meringue,1
+Creature Egg,1,Processed Sugar,1,,,Delicate Meringue,1
+Tall Eggs,1,Processed Sugar,1,,,Delicate Meringue,1
+Giant Egg,1,Processed Sugar,1,,,Delicate Meringue,1
+Warm Proto-Milk,1,,,,,Proto-Cream,1
+Fresh Milk,1,,,,,Cream,1
+Wild Milk,1,,,,,Cream,1
+Sticky 'Honey',1,,,,,Synthetic Honey,1
+Cream,1,,,,,Churned Butter,1
+Proto-Cream,1,,,,,Proto-Butter,1
+Churned Butter,1,Churned Butter,1,,,Clarified Oil,1
+Churned Butter,1,Proto-Butter,1,,,Clarified Oil,1
+Proto-Butter,1,Proto-Butter,1,,,Proto-Oil,1
+Salt,1,Cream,1,Processed Sugar,1,Salty Custard,1
+Larval Core,1,Cream,1,Processed Sugar,1,Monstrous Custard,1
+Creature Egg,1,Cream,1,Processed Sugar,1,Viscous Custard,1
+Tall Eggs,1,Cream,1,Processed Sugar,1,Viscous Custard,1
+Giant Egg,1,Cream,1,Processed Sugar,1,Viscous Custard,1
+Silicon Egg,1,Cream,1,Processed Sugar,1,Stellar Custard,1
+Cream,1,Wild Yeast,1,,,Tangy Cheese,1
+Proto-Cream,1,Wild Yeast,1,,,ProtoCheese,1
+Churned Butter,1,Synthetic Honey,1,,,Honey Butter,1
+Proto-Butter,1,Synthetic Honey,1,,,Honied Proto-Butter,1
+Churned Butter,1,Processed Sugar,1,,,Sweetened Butter,1
+Proto-Butter,1,Processed Sugar,1,,,Sweetened Proto-Butter,1
+Churned Butter,1,Sticky 'Honey',1,,,Gooey Butter,1
+Proto-Butter,1,Sticky 'Honey',1,,,Gooey ProtoButter,1
+Refined Flour,1,Wild Yeast,1,,,Dough,1
+Dough,1,,,,,Bread,1
+Refined Flour,1,Churned Butter,1,,,Pastry,1
+Refined Flour,1,Proto-Butter,1,,,Pastry,1
+Processed Sugar,1,Salt,1,,,Crunchy Caramel,1
+Clarified Oil,1,Dough,1,Processed Sugar,1,Lumpen Doughnut,1
+Proto-Oil,1,Dough,1,Processed Sugar,1,Proto-Beignet,1
+Lumpen Doughnut,1,Viscous Custard,1,,,Custard Doughnut,1
+Lumpen Doughnut,1,Salty Custard,1,,,Salty Doughnut,1
+Lumpen Doughnut,1,Monstrous Custard,1,,,Monstrous Doughnut,1
+Lumpen Doughnut,1,Stellar Custard,1,,,The Stellarator,1
+Lumpen Doughnut,1,Synthetic Honey,1,,,Honey Doughnut,1
+Lumpen Doughnut,1,Sweetened Butter,1,,,Honeybutter Doughnut,1
+Lumpen Doughnut,1,Sweetened Proto-Butter,1,,,Honeybutter Doughnut,1
+Lumpen Doughnut,1,Honey Butter,1,,,Honeybutter Doughnut,1
+Lumpen Doughnut,1,Honied Proto-Butter,1,,,Honeybutter Doughnut,1
+Lumpen Doughnut,1,Gooey ProtoButter,1,,,Gooey ProtoDoughnut,1
+Lumpen Doughnut,1,Crunchy Caramel,1,,,Caramel Doughnut,1
+Lumpen Doughnut,1,Bittersweet Cocoa,1,,,Cocoa Doughnut,1
+Lumpen Doughnut,1,Meaty Chunks,1,,,Proteinous Doughnut,1
+Hexaberry,1,Processed Sugar,1,,,Anomalous Jam,1
+Fireberry,1,Processed Sugar,1,,,Ever-burning Jam,1
+Grahberry,1,Processed Sugar,1,,,Grahj'am,1
+Cactus Nectar,1,Processed Sugar,1,,,Cactus Jelly,1
+Leopard-Fruit,1,Processed Sugar,1,,,Furball Jelly,1
+Crab 'Apple',1,Processed Sugar,1,,,Wriggling Jam,1
+Lumpen Doughnut,1,Anomalous Jam,1,,,Anomalous Doughnut,1
+Lumpen Doughnut,1,Ever-burning Jam,1,,,Jam Doughnut,1
+Lumpen Doughnut,1,Grahj'am,1,,,Jam Doughnut,1
+Lumpen Doughnut,1,Cactus Jelly,1,,,Jam Doughnut,1
+Lumpen Doughnut,1,Furball Jelly,1,,,Jam Doughnut,1
+Lumpen Doughnut,1,Wriggling Jam,1,,,Wriggling Doughnut,1
+Meat Flakes,1,,,,,Meaty Chunks,1
+Meaty Chunks,1,Carbon,1,,,Smoked Meat,1
+Meaty Chunks,1,Condensed Carbon,1,,,Smoked Meat,1
+Meaty Chunks,1,,,,,Processed Meat,1
+Processed Meat,1,Carbon,1,,,Smoked Meat,1
+Processed Meat,1,Condensed Carbon,1,,,Smoked Meat,1
+Meaty Wings,1,,,,,Processed Meat,1
+Fiendish Roe,1,,,,,Processed Meat,1
+Offal Sac,1,,,,,Processed Meat,1
+ProtoSausage,1,,,,,Processed Meat,1
+Diplo Chunks,1,,,,,Processed Meat,1
+Scaly Meat,1,,,,,Processed Meat,1
+Feline Liver,1,,,,,Processed Meat,1
+Strider Sausage,1,,,,,Processed Meat,1
+Raw Steak,1,,,,,Processed Meat,1
+Leg Meat,1,,,,,Processed Meat,1
+Meaty Wings,1,Carbon,1,,,Smoked Meat,1
+Fiendish Roe,1,Carbon,1,,,Smoked Meat,1
+Offal Sac,1,Carbon,1,,,Smoked Meat,1
+ProtoSausage,1,Carbon,1,,,Smoked Meat,1
+Diplo Chunks,1,Carbon,1,,,Smoked Meat,1
+Scaly Meat,1,Carbon,1,,,Smoked Meat,1
+Feline Liver,1,Carbon,1,,,Smoked Meat,1
+Strider Sausage,1,Carbon,1,,,Smoked Meat,1
+Raw Steak,1,Carbon,1,,,Smoked Meat,1
+Leg Meat,1,Carbon,1,,,Smoked Meat,1
+Meaty Wings,1,Condensed Carbon,1,,,Smoked Meat,1
+Fiendish Roe,1,Condensed Carbon,1,,,Smoked Meat,1
+Offal Sac,1,Condensed Carbon,1,,,Smoked Meat,1
+ProtoSausage,1,Condensed Carbon,1,,,Smoked Meat,1
+Diplo Chunks,1,Condensed Carbon,1,,,Smoked Meat,1
+Scaly Meat,1,Condensed Carbon,1,,,Smoked Meat,1
+Feline Liver,1,Condensed Carbon,1,,,Smoked Meat,1
+Strider Sausage,1,Condensed Carbon,1,,,Smoked Meat,1
+Raw Steak,1,Condensed Carbon,1,,,Smoked Meat,1
+Leg Meat,1,Condensed Carbon,1,,,Smoked Meat,1
+Pastry,1,,,,,Pie Case,1
+Pie Case,1,Meaty Chunks,1,,,Mystery Meat Pie,1
+Pie Case,1,Processed Meat,1,,,Mystery Meat Pie,1
+Pie Case,1,Smoked Meat,1,,,Smokey Meat Pie,1
+Pie Case,1,Steamed Vegetables,1,,,High-Fibre Pie,1
+Pie Case,1,Meaty Wings,1,,,Mystery Meat Pie,1
+Pie Case,1,Fiendish Roe,1,,,Haunted Pie,1
+Pie Case,1,Offal Sac,1,,,Chewy Organ Pie,1
+Pie Case,1,ProtoSausage,1,,,Proto-Sausage Pie,1
+Pie Case,1,Diplo Chunks,1,,,Mystery Meat Pie,1
+Pie Case,1,Scaly Meat,1,,,Mystery Meat Pie,1
+Pie Case,1,Feline Liver,1,,,Chewy Organ Pie,1
+Pie Case,1,Strider Sausage,1,,,Mystery Meat Pie,1
+Pie Case,1,Raw Steak,1,,,Mystery Meat Pie,1
+Pie Case,1,Leg Meat,1,,,'Legs-in-Pastry',1
+Pie Case,1,Salty Chunks,1,,,Fish Pie,1
+Pie Case,1,Pilgrimberry,1,,,Fruity Pudding,1
+Pie Case,1,Fireberry,1,,,Glowing Pie,1
+Pie Case,1,Solartillo,1,,,Glowing Pie,1
+Pie Case,1,Jade Peas,1,,,High-Fibre Pie,1
+Pie Case,1,Non-Toxic Mushroom,1,,,Fungal Tart,1
+Pie Case,1,Grahberry,1,,,Fruity Pudding,1
+Pie Case,1,Sievert Beans,1,,,Glowing Pie,1
+Pie Case,1,Aloe Flesh,1,,,Spikey Tart,1
+Pie Case,1,Cactus Nectar,1,,,Spikey Tart,1
+Pie Case,1,Hexaberry,1,,,Anomalous Tart,1
+Pie Case,1,Sweetroot,1,,,Mushed Root Pie,1
+Pie Case,1,Sticky 'Honey',1,,,Honey Tart,1
+Pie Case,1,Regis Grease,1,,,Solidified Grease Pie,1
+Pie Case,1,Clarified Oil,1,,,Solidified Grease Pie,1
+Pie Case,1,Proto-Oil,1,,,Solidified Grease Pie,1
+Pie Case,1,Leopard-Fruit,1,,,Jellied Fur Tart,1
+Pie Case,1,Crab 'Apple',1,,,Wriggling Tart,1
+Pie Case,1,Anomalous Jam,1,,,Anomalous Tart,1
+Pie Case,1,Ever-burning Jam,1,,,Glowing Pie,1
+Pie Case,1,Grahj'am,1,,,Jam Tart,1
+Pie Case,1,Cactus Jelly,1,,,Jam Tart,1
+Pie Case,1,Furball Jelly,1,,,Jellied Fur Tart,1
+Pie Case,1,Wriggling Jam,1,,,Wriggling Tart,1
+Pie Case,1,Bittersweet Cocoa,1,,,Cocoa Tart,1
+Pie Case,1,Cream,1,,,Creamy Treat,1
+Pie Case,1,Viscous Custard,1,,,Custard Tart,1
+Pie Case,1,Salty Custard,1,,,Custard Tart,1
+Pie Case,1,Monstrous Custard,1,,,The Spawning Tart,1
+Pie Case,1,Stellar Custard,1,,,Stellar Custard Tart,1
+Pie Case,1,Tangy Cheese,1,,,Baked Cheese Tart,1
+Pie Case,1,ProtoCheese,1,,,Baked Cheese Tart,1
+Pie Case,1,Crunchy Caramel,1,,,Caramel Tart,1
+Pie Case,1,Synthetic Honey,1,,,Honey Tart,1
+Pie Case,1,Tangy Cheese,1,Solartillo,1,Cheesy Vegetable Pie,1
+Pie Case,1,Tangy Cheese,1,Jade Peas,1,Cheesy Vegetable Pie,1
+Pie Case,1,Tangy Cheese,1,Sievert Beans,1,Cheesy Vegetable Pie,1
+Pie Case,1,Tangy Cheese,1,Pulpy Roots,1,Cheesy Vegetable Pie,1
+Pie Case,1,Tangy Cheese,1,Aloe Flesh,1,Cheesy Vegetable Pie,1
+Pie Case,1,ProtoCheese,1,Solartillo,1,Cheesy Vegetable Pie,1
+Pie Case,1,ProtoCheese,1,Jade Peas,1,Cheesy Vegetable Pie,1
+Pie Case,1,ProtoCheese,1,Sievert Beans,1,Cheesy Vegetable Pie,1
+Pie Case,1,ProtoCheese,1,Pulpy Roots,1,Cheesy Vegetable Pie,1
+Pie Case,1,ProtoCheese,1,Aloe Flesh,1,Cheesy Vegetable Pie,1
+Larval Core,1,Tangy Cheese,1,,,Whispering Omelette,1
+Creature Egg,1,Tangy Cheese,1,,,Omelette,1
+Tall Eggs,1,Tangy Cheese,1,,,Omelette,1
+Giant Egg,1,Tangy Cheese,1,,,Omelette,1
+Larval Core,1,ProtoCheese,1,,,Parasitic Omelette,1
+Creature Egg,1,ProtoCheese,1,,,Proto-Omelette,1
+Tall Eggs,1,ProtoCheese,1,,,Proto-Omelette,1
+Giant Egg,1,ProtoCheese,1,,,Proto-Omelette,1
+Processed Meat,1,Processed Meat,1,,,Mystery Meat Stew,1
+Smoked Meat,1,Processed Meat,1,,,Mystery Meat Stew,1
+Smoked Meat,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Meaty Chunks,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Meaty Chunks,1,Processed Meat,1,,,Mystery Meat Stew,1
+Meaty Chunks,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Offal Sac,1,Offal Sac,1,,,Stewed Organs,1
+Feline Liver,1,Feline Liver,1,,,Stewed Organs,1
+Offal Sac,1,Feline Liver,1,,,Stewed Organs,1
+Meaty Wings,1,Meaty Wings,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Processed Meat,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Meaty Wings,1,ProtoSausage,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Diplo Chunks,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Scaly Meat,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Strider Sausage,1,,,Mystery Meat Stew,1
+Meaty Wings,1,Raw Steak,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Processed Meat,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Smoked Meat,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Diplo Chunks,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Scaly Meat,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Strider Sausage,1,,,Mystery Meat Stew,1
+ProtoSausage,1,Raw Steak,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Diplo Chunks,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Processed Meat,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Scaly Meat,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Strider Sausage,1,,,Mystery Meat Stew,1
+Diplo Chunks,1,Raw Steak,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Scaly Meat,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Processed Meat,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Strider Sausage,1,,,Mystery Meat Stew,1
+Scaly Meat,1,Raw Steak,1,,,Mystery Meat Stew,1
+Strider Sausage,1,Strider Sausage,1,,,Mystery Meat Stew,1
+Strider Sausage,1,Processed Meat,1,,,Mystery Meat Stew,1
+Strider Sausage,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Strider Sausage,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Strider Sausage,1,Raw Steak,1,,,Mystery Meat Stew,1
+Raw Steak,1,Raw Steak,1,,,Mystery Meat Stew,1
+Raw Steak,1,Processed Meat,1,,,Mystery Meat Stew,1
+Raw Steak,1,Meaty Chunks,1,,,Mystery Meat Stew,1
+Raw Steak,1,Smoked Meat,1,,,Mystery Meat Stew,1
+Steamed Vegetables,1,Impulse Beans,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Solartillo,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Jade Peas,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Sievert Beans,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Sweetroot,1,,,Fibrous Stew,1
+Steamed Vegetables,1,Pulpy Roots,1,,,Fibrous Stew,1
+Impulse Beans,1,Impulse Beans,1,,,Fibrous Stew,1
+Impulse Beans,1,Solartillo,1,,,Fibrous Stew,1
+Impulse Beans,1,Jade Peas,1,,,Fibrous Stew,1
+Impulse Beans,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Impulse Beans,1,Sievert Beans,1,,,Fibrous Stew,1
+Impulse Beans,1,Sweetroot,1,,,Fibrous Stew,1
+Impulse Beans,1,Pulpy Roots,1,,,Fibrous Stew,1
+Solartillo,1,Solartillo,1,,,Fibrous Stew,1
+Solartillo,1,Jade Peas,1,,,Fibrous Stew,1
+Solartillo,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Solartillo,1,Sievert Beans,1,,,Fibrous Stew,1
+Solartillo,1,Sweetroot,1,,,Fibrous Stew,1
+Solartillo,1,Pulpy Roots,1,,,Fibrous Stew,1
+Jade Peas,1,Jade Peas,1,,,Fibrous Stew,1
+Jade Peas,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Jade Peas,1,Sievert Beans,1,,,Fibrous Stew,1
+Jade Peas,1,Sweetroot,1,,,Fibrous Stew,1
+Jade Peas,1,Pulpy Roots,1,,,Fibrous Stew,1
+Non-Toxic Mushroom,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Non-Toxic Mushroom,1,Sievert Beans,1,,,Fibrous Stew,1
+Non-Toxic Mushroom,1,Sweetroot,1,,,Fibrous Stew,1
+Non-Toxic Mushroom,1,Pulpy Roots,1,,,Fibrous Stew,1
+Sievert Beans,1,Sievert Beans,1,,,Fibrous Stew,1
+Sievert Beans,1,Sweetroot,1,,,Fibrous Stew,1
+Sievert Beans,1,Pulpy Roots,1,,,Fibrous Stew,1
+Sweetroot,1,Sweetroot,1,,,Fibrous Stew,1
+Sweetroot,1,Pulpy Roots,1,,,Fibrous Stew,1
+Pulpy Roots,1,Pulpy Roots,1,,,Fibrous Stew,1
+Root Juice,1,,,,,Crunchy Caramel,1
+Root Juice,1,Steamed Vegetables,1,,,Flavoursome Sauce,1
+Steamed Vegetables,1,Steamed Vegetables,1,,,Flavoursome Sauce,1
+Fire Water,1,Fire Water,1,,,Scorching Sauce,1
+Fire Water,1,Fireberry,1,,,Scorching Sauce,1
+Fire Water,1,Solartillo,1,,,Scorching Sauce,1
+Fire Water,1,Sievert Beans,1,,,Scorching Sauce,1
+Fire Water,1,Grahberry,1,,,Scorching Sauce,1
+Root Juice,1,Fireberry,1,,,Scorching Sauce,1
+Root Juice,1,Solartillo,1,,,Scorching Sauce,1
+Root Juice,1,Sievert Beans,1,,,Scorching Sauce,1
+Root Juice,1,Grahberry,1,,,Scorching Sauce,1
+Cream,1,Cream,1,,,Creamy Sauce,1
+Cream,1,Proto-Cream,1,,,Creamy Sauce,1
+Proto-Cream,1,Proto-Cream,1,,,Creamy Sauce,1
+Cream,1,Tangy Cheese,1,,,Partially-Liquid Cheese,1
+Cream,1,ProtoCheese,1,,,Partially-Liquid Cheese,1
+Proto-Cream,1,Tangy Cheese,1,,,Partially-Liquid Cheese,1
+Proto-Cream,1,ProtoCheese,1,,,Partially-Liquid Cheese,1
+Stewed Organs,1,Partially-Liquid Cheese,1,,,Tangy Organ Surprise,1
+Fibrous Stew,1,Partially-Liquid Cheese,1,,,Tangy Vegetable Stew,1
+Mystery Meat Stew,1,Partially-Liquid Cheese,1,,,Cheese-and-Flesh Stew,1
+Stewed Organs,1,Creamy Sauce,1,,,Creamed Organ Soup,1
+Fibrous Stew,1,Creamy Sauce,1,,,Cream of Vegetable Soup,1
+Mystery Meat Stew,1,Creamy Sauce,1,,,Thick Meat Stew,1
+Stewed Organs,1,Scorching Sauce,1,,,Devilled Organs,1
+Fibrous Stew,1,Scorching Sauce,1,,,Fiery Vegetable Stew,1
+Mystery Meat Stew,1,Scorching Sauce,1,,,Spicy Fleshballs,1
+Stewed Organs,1,Flavoursome Sauce,1,,,Flavoursome Organs,1
+Fibrous Stew,1,Flavoursome Sauce,1,,,Delicious Vegetable Stew,1
+Mystery Meat Stew,1,Flavoursome Sauce,1,,,Herb-Encrusted Flesh,1
+Sweetened Butter,1,Refined Flour,1,Creature Egg,1,Cake Batter,1
+Sweetened Proto-Butter,1,Refined Flour,1,Creature Egg,1,Proto-Batter,1
+Honey Butter,1,Refined Flour,1,Creature Egg,1,Cake Batter,1
+Honied Proto-Butter,1,Refined Flour,1,Creature Egg,1,Proto-Batter,1
+Gooey ProtoButter,1,Refined Flour,1,Creature Egg,1,"Thick, Sweet Batter",1
+Gooey Butter,1,Refined Flour,1,Creature Egg,1,"Thick, Sweet Batter",1
+Sweetened Butter,1,Refined Flour,1,Tall Eggs,1,Cake Batter,1
+Sweetened Proto-Butter,1,Refined Flour,1,Tall Eggs,1,Proto-Batter,1
+Honey Butter,1,Refined Flour,1,Tall Eggs,1,Cake Batter,1
+Honied Proto-Butter,1,Refined Flour,1,Tall Eggs,1,Proto-Batter,1
+Gooey ProtoButter,1,Refined Flour,1,Tall Eggs,1,"Thick, Sweet Batter",1
+Gooey Butter,1,Refined Flour,1,Tall Eggs,1,"Thick, Sweet Batter",1
+Sweetened Butter,1,Refined Flour,1,Giant Egg,1,Cake Batter,1
+Sweetened Proto-Butter,1,Refined Flour,1,Giant Egg,1,Proto-Batter,1
+Honey Butter,1,Refined Flour,1,Giant Egg,1,Cake Batter,1
+Honied Proto-Butter,1,Refined Flour,1,Giant Egg,1,Proto-Batter,1
+Gooey ProtoButter,1,Refined Flour,1,Giant Egg,1,"Thick, Sweet Batter",1
+Gooey Butter,1,Refined Flour,1,Giant Egg,1,"Thick, Sweet Batter",1
+Sweetened Butter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Sweetened Proto-Butter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Honey Butter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Honied Proto-Butter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Gooey ProtoButter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Gooey Butter,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Delicate Meringue,1,Refined Flour,1,Creature Egg,1,Extra-Fluffy Batter,1
+Delicate Meringue,1,Refined Flour,1,Tall Eggs,1,Extra-Fluffy Batter,1
+Delicate Meringue,1,Refined Flour,1,Giant Egg,1,Extra-Fluffy Batter,1
+Delicate Meringue,1,Refined Flour,1,Larval Core,1,"Writhing, Roiling Batter",1
+Cake Batter,1,Synthetic Honey,1,,,Glittering Honey Cake,1
+Cake Batter,1,Sticky 'Honey',1,,,Questionably Sweet Cake,1
+Cake Batter,1,Cream,1,,,Cream Buns,1
+Cake Batter,1,Gooey Butter,1,,,Questionably Sweet Cake,1
+Cake Batter,1,Bittersweet Cocoa,1,,,Chocolate Cake,1
+Cake Batter,1,Crunchy Caramel,1,,,Caramel-Encrusted Cake,1
+Cake Batter,1,Crab 'Apple',1,,,Spiced 'Apple' Cake,1
+Cake Batter,1,Cactus Nectar,1,,,Esophageal Surprise,1
+Cake Batter,1,Anomalous Jam,1,Cream,1,Perpetual Cake,1
+Cake Batter,1,Ever-burning Jam,1,Cream,1,Ever-Boiling Cake,1
+Cake Batter,1,Grahj'am,1,Cream,1,Traditional Cake,1
+Cake Batter,1,Cactus Jelly,1,Cream,1,Esophageal Surprise,1
+Cake Batter,1,Furball Jelly,1,Cream,1,Traditional Cake,1
+Cake Batter,1,Wriggling Jam,1,Cream,1,Spiced 'Apple' Cake,1
+Cake Batter,1,Viscous Custard,1,,,Custard Fancy,1
+Cake Batter,1,Salty Custard,1,,,Briney Delight,1
+Cake Batter,1,Monstrous Custard,1,,,"Horrifying, Gooey Delight",1
+Cake Batter,1,Stellar Custard,1,,,Interstellar Fancy,1
+Proto-Batter,1,Sticky 'Honey',1,,,Most Curious Cake,1
+Proto-Batter,1,Cream,1,,,Cream Curiosity,1
+Proto-Batter,1,Gooey Butter,1,,,Most Curious Cake,1
+Proto-Batter,1,Bittersweet Cocoa,1,,,Chocolate Curiosity,1
+Proto-Batter,1,Crunchy Caramel,1,,,Caramel Curiosity,1
+Proto-Batter,1,Synthetic Honey,1,,,Honied Proto-Cake,1
+Proto-Batter,1,Crab 'Apple',1,,,'Apple' Curiosity,1
+Proto-Batter,1,Cactus Nectar,1,,,Prickly Curiosity,1
+Proto-Batter,1,Anomalous Jam,1,Cream,1,Unsolvable Jam Turnover,1
+Proto-Batter,1,Ever-burning Jam,1,Cream,1,Startling Fancy,1
+Proto-Batter,1,Grahj'am,1,Cream,1,Jam Curiosity,1
+Proto-Batter,1,Cactus Jelly,1,Cream,1,Prickly Curiosity,1
+Proto-Batter,1,Furball Jelly,1,Cream,1,Jam Curiosity,1
+Proto-Batter,1,Wriggling Jam,1,Cream,1,'Apple' Curiosity,1
+Proto-Batter,1,Viscous Custard,1,,,Custard Curiosity,1
+Proto-Batter,1,Salty Custard,1,,,Salty Surprise,1
+Proto-Batter,1,Monstrous Custard,1,,,"Horrifying, Gooey Delight",1
+Proto-Batter,1,Stellar Custard,1,,,Interstellar Curiosity,1
+"Thick, Sweet Batter",1,Sticky 'Honey',1,,,Questionably Sweet Cake,1
+"Thick, Sweet Batter",1,Cream,1,,,Sweet Cream Dreams,1
+"Thick, Sweet Batter",1,Gooey Butter,1,,,Questionably Sweet Cake,1
+"Thick, Sweet Batter",1,Bittersweet Cocoa,1,,,Gooey Chocolate Cake,1
+"Thick, Sweet Batter",1,Crunchy Caramel,1,,,Gooey Caramel Cake,1
+"Thick, Sweet Batter",1,Synthetic Honey,1,,,Honey-Soaked Fancy,1
+"Thick, Sweet Batter",1,Crab 'Apple',1,,,Gooey Fruit Surprise,1
+"Thick, Sweet Batter",1,Cactus Nectar,1,,,Honied Throat-Sticker,1
+"Thick, Sweet Batter",1,Anomalous Jam,1,Cream,1,Perpetual Honeycake,1
+"Thick, Sweet Batter",1,Ever-burning Jam,1,Cream,1,Gooey Mouthburner,1
+"Thick, Sweet Batter",1,Grahj'am,1,Cream,1,Jam Oozers,1
+"Thick, Sweet Batter",1,Cactus Jelly,1,Cream,1,Honied Throat-Sticker,1
+"Thick, Sweet Batter",1,Furball Jelly,1,Cream,1,Jam Oozers,1
+"Thick, Sweet Batter",1,Wriggling Jam,1,Cream,1,Gooey Fruit Surprise,1
+"Thick, Sweet Batter",1,Viscous Custard,1,,,Gooey Custard Fancy,1
+"Thick, Sweet Batter",1,Salty Custard,1,,,Salt-Laced Honey Cake,1
+"Thick, Sweet Batter",1,Monstrous Custard,1,,,Gooey Screamer,1
+"Thick, Sweet Batter",1,Stellar Custard,1,,,Starbirth Delight,1
+Wailing Batter,1,Sticky 'Honey',1,,,Gooey Screamer,1
+Wailing Batter,1,Cream,1,,,Doomed Cream Cake,1
+Wailing Batter,1,Gooey Butter,1,,,Gooey Screamer,1
+Wailing Batter,1,Bittersweet Cocoa,1,,,Haunted Chocolate Dreams,1
+Wailing Batter,1,Crunchy Caramel,1,,,Wailing Caramel Cake,1
+Wailing Batter,1,Synthetic Honey,1,,,Monstrous Honey Cake,1
+Wailing Batter,1,Crab 'Apple',1,,,'Apple' Cake of Lost Souls,1
+Wailing Batter,1,Cactus Nectar,1,,,Choking Monstrosity Cake,1
+Wailing Batter,1,Anomalous Jam,1,Cream,1,Cake of Glass,1
+Wailing Batter,1,Ever-burning Jam,1,Cream,1,Cake of Burning Dread,1
+Wailing Batter,1,Grahj'am,1,Cream,1,Appalling Jam Sponge,1
+Wailing Batter,1,Cactus Jelly,1,Cream,1,Choking Monstrosity Cake,1
+Wailing Batter,1,Furball Jelly,1,Cream,1,Appalling Jam Sponge,1
+Wailing Batter,1,Wriggling Jam,1,Cream,1,'Apple' Cake of Lost Souls,1
+Wailing Batter,1,Viscous Custard,1,,,"Horrifying, Gooey Delight",1
+Wailing Batter,1,Salty Custard,1,,,"Horrifying, Gooey Delight",1
+Wailing Batter,1,Monstrous Custard,1,,,"Horrifying, Gooey Delight",1
+Wailing Batter,1,Stellar Custard,1,,,"Horrifying, Gooey Delight",1
+Extra-Fluffy Batter,1,Sticky 'Honey',1,,,Gooey Honey Puff,1
+Extra-Fluffy Batter,1,Cream,1,,,Extra-Fluffy Cream Cake,1
+Extra-Fluffy Batter,1,Gooey Butter,1,,,Gooey Honey Puff,1
+Extra-Fluffy Batter,1,Bittersweet Cocoa,1,,,Chocolate Dream,1
+Extra-Fluffy Batter,1,Crunchy Caramel,1,,,Fluffy Caramel Delight,1
+Extra-Fluffy Batter,1,Synthetic Honey,1,,,Honied Angel Cake,1
+Extra-Fluffy Batter,1,Crab 'Apple',1,,,Angelic Fruitcake,1
+Extra-Fluffy Batter,1,Cactus Nectar,1,,,Soft and Spiky Surprise,1
+Extra-Fluffy Batter,1,Anomalous Jam,1,Cream,1,Perpetual Jam Fluffer,1
+Extra-Fluffy Batter,1,Ever-burning Jam,1,Cream,1,Burning Jam Fluffer,1
+Extra-Fluffy Batter,1,Grahj'am,1,Cream,1,Jam Fluffer,1
+Extra-Fluffy Batter,1,Cactus Jelly,1,Cream,1,Soft and Spiky Surprise,1
+Extra-Fluffy Batter,1,Furball Jelly,1,Cream,1,Jam Fluffer,1
+Extra-Fluffy Batter,1,Wriggling Jam,1,Cream,1,Angelic Fruitcake,1
+Extra-Fluffy Batter,1,Viscous Custard,1,,,Soft Custard Fancy,1
+Extra-Fluffy Batter,1,Salty Custard,1,,,Soft Custard Fancy,1
+Extra-Fluffy Batter,1,Monstrous Custard,1,,,Soft Custard Fancy,1
+Extra-Fluffy Batter,1,Stellar Custard,1,,,Soft Custard Fancy,1
+"Writhing, Roiling Batter",1,Sticky 'Honey',1,,,"Itching, Creeping Honey Sponge",1
+"Writhing, Roiling Batter",1,Cream,1,,,Unbound Cream Horn,1
+"Writhing, Roiling Batter",1,Gooey Butter,1,,,"Itching, Creeping Honey Sponge",1
+"Writhing, Roiling Batter",1,Bittersweet Cocoa,1,,,Volatile Chocolate Fancy,1
+"Writhing, Roiling Batter",1,Crunchy Caramel,1,,,Caramelised Nightmare,1
+"Writhing, Roiling Batter",1,Synthetic Honey,1,,,Tortured Honey Cake,1
+"Writhing, Roiling Batter",1,Crab 'Apple',1,,,Cake of Sin,1
+"Writhing, Roiling Batter",1,Cactus Nectar,1,,,Fluffy Throatripper,1
+"Writhing, Roiling Batter",1,Anomalous Jam,1,Cream,1,Unbound Monstrosity,1
+"Writhing, Roiling Batter",1,Ever-burning Jam,1,Cream,1,Burning Jam Surprise,1
+"Writhing, Roiling Batter",1,Grahj'am,1,Cream,1,Writhing Jam Puff,1
+"Writhing, Roiling Batter",1,Cactus Jelly,1,Cream,1,Fluffy Throatripper,1
+"Writhing, Roiling Batter",1,Furball Jelly,1,Cream,1,Writhing Jam Puff,1
+"Writhing, Roiling Batter",1,Wriggling Jam,1,Cream,1,Cake of Sin,1
+"Writhing, Roiling Batter",1,Viscous Custard,1,,,Cake of the Lost,1
+"Writhing, Roiling Batter",1,Salty Custard,1,,,Cake of the Lost,1
+"Writhing, Roiling Batter",1,Monstrous Custard,1,,,Cake of the Lost,1
+"Writhing, Roiling Batter",1,Stellar Custard,1,,,Cake of the Lost,1
+Hypnotic Eye,1,,,,,Horrifying Mush,1
+Hypnotic Eye,1,Hypnotic Eye,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Horrifying Mush,1,,,Abyssal Stew,1
+Horrifying Mush,1,Horrifying Mush,1,,,Abyssal Stew,1
+Horrifying Mush,1,Processed Meat,1,,,Abyssal Stew,1
+Horrifying Mush,1,Smoked Meat,1,,,Abyssal Stew,1
+Horrifying Mush,1,Meaty Chunks,1,,,Abyssal Stew,1
+Horrifying Mush,1,Offal Sac,1,,,Abyssal Stew,1
+Horrifying Mush,1,Feline Liver,1,,,Abyssal Stew,1
+Horrifying Mush,1,Meaty Wings,1,,,Abyssal Stew,1
+Horrifying Mush,1,ProtoSausage,1,,,Abyssal Stew,1
+Horrifying Mush,1,Diplo Chunks,1,,,Abyssal Stew,1
+Horrifying Mush,1,Scaly Meat,1,,,Abyssal Stew,1
+Horrifying Mush,1,Strider Sausage,1,,,Abyssal Stew,1
+Horrifying Mush,1,Raw Steak,1,,,Abyssal Stew,1
+Horrifying Mush,1,Steamed Vegetables,1,,,Abyssal Stew,1
+Horrifying Mush,1,Impulse Beans,1,,,Abyssal Stew,1
+Horrifying Mush,1,Solartillo,1,,,Abyssal Stew,1
+Horrifying Mush,1,Jade Peas,1,,,Abyssal Stew,1
+Horrifying Mush,1,Non-Toxic Mushroom,1,,,Abyssal Stew,1
+Horrifying Mush,1,Sievert Beans,1,,,Abyssal Stew,1
+Horrifying Mush,1,Sweetroot,1,,,Abyssal Stew,1
+Horrifying Mush,1,Pulpy Roots,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Processed Meat,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Smoked Meat,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Meaty Chunks,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Offal Sac,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Feline Liver,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Meaty Wings,1,,,Abyssal Stew,1
+Hypnotic Eye,1,ProtoSausage,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Diplo Chunks,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Scaly Meat,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Strider Sausage,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Raw Steak,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Steamed Vegetables,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Impulse Beans,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Solartillo,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Jade Peas,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Non-Toxic Mushroom,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Sievert Beans,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Sweetroot,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Pulpy Roots,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Frozen Tubers,1,,,Iced Screams,1
+Horrifying Mush,1,Frozen Tubers,1,,,Iced Screams,1
+Hypnotic Eye,1,Frost Crystal,1,,,Iced Screams,1
+Horrifying Mush,1,Frost Crystal,1,,,Iced Screams,1
+Viscous Custard,1,Frozen Tubers,1,,,Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,,,Ice Cream,1
+Salty Custard,1,Frozen Tubers,1,,,Briney Rime,1
+Salty Custard,1,Frost Crystal,1,,,Briney Rime,1
+Monstrous Custard,1,Frozen Tubers,1,,,Deathly-Cold Ice Cream,1
+Monstrous Custard,1,Frost Crystal,1,,,Deathly-Cold Ice Cream,1
+Stellar Custard,1,Frozen Tubers,1,,,Stellar Ice Cream,1
+Stellar Custard,1,Frost Crystal,1,,,Stellar Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Bittersweet Cocoa,1,Chocolate Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Bittersweet Cocoa,1,Chocolate Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Crunchy Caramel,1,Caramel Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Crunchy Caramel,1,Caramel Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Crab 'Apple',1,'Apple' Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Crab 'Apple',1,'Apple' Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Wriggling Jam,1,'Apple' Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Wriggling Jam,1,'Apple' Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Synthetic Honey,1,Honey Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Synthetic Honey,1,Honey Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Sticky 'Honey',1,Honey Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Sticky 'Honey',1,Honey Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Hexaberry,1,Perpetual Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Hexaberry,1,Perpetual Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Anomalous Jam,1,Perpetual Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Anomalous Jam,1,Perpetual Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Grahberry,1,Vy'ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Grahberry,1,Vy'ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Grahj'am,1,Vy'ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Grahj'am,1,Vy'ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Ever-burning Jam,1,Spiced Ice,1
+Viscous Custard,1,Frost Crystal,1,Ever-burning Jam,1,Spiced Ice,1
+Viscous Custard,1,Frozen Tubers,1,Fireberry,1,Spiced Ice,1
+Viscous Custard,1,Frost Crystal,1,Fireberry,1,Spiced Ice,1
+Viscous Custard,1,Frozen Tubers,1,Cactus Jelly,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Cactus Jelly,1,Fruity Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Furball Jelly,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Furball Jelly,1,Fruity Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Cactus Nectar,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Cactus Nectar,1,Fruity Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Leopard-Fruit,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Leopard-Fruit,1,Fruity Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Sweetroot,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Sweetroot,1,Fruity Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Pilgrimberry,1,Fruity Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Pilgrimberry,1,Fruity Ice Cream,1
+Leg Meat,1,Mordite,1,,,Creature Pellets,1
+Carbon Nanotubes,1,Mordite,1,,,Creature Pellets,1
+ProtoSausage,1,Mordite,1,,,Creature Pellets,1
+Diplo Chunks,1,Mordite,1,,,Creature Pellets,1
+Scaly Meat,1,Mordite,1,,,Creature Pellets,1
+Raw Steak,1,Mordite,1,,,Creature Pellets,1
+Meaty Chunks,1,Mordite,1,,,Creature Pellets,1
+Scented Herbs,1,Mordite,1,,,Creature Pellets,1
+Enzyme Fluid,1,Mordite,1,,,Creature Pellets,1
+Offal Sac,1,Mordite,1,,,Creature Pellets,1
+Feline Liver,1,Mordite,1,,,Creature Pellets,1
+Heptaploid Wheat,1,Faecium,1,,,Creature Pellets,1
+Glass Grains,1,Faecium,1,,,Creature Pellets,1
+Gamma Root,1,Faecium,1,,,Creature Pellets,1
+Aloe Flesh,1,Faecium,1,,,Creature Pellets,1
+Sievert Beans,1,Faecium,1,,,Creature Pellets,1
+Solanium,1,Faecium,1,,,Creature Pellets,1
+Frost Crystal,1,Faecium,1,,,Creature Pellets,1
+Jade Peas,1,Faecium,1,,,Creature Pellets,1
+Pulpy Roots,1,Faecium,1,,,Creature Pellets,1
+Non-Toxic Mushroom,1,Faecium,1,,,Creature Pellets,1
+Solartillo,1,Faecium,1,,,Creature Pellets,1
+Fungal Mould,1,Faecium,1,,,Creature Pellets,1
+Cactus Nectar,1,Faecium,1,,,Creature Pellets,1
+Frozen Tubers,1,Faecium,1,,,Creature Pellets,1
+Impulse Beans,1,Faecium,1,,,Creature Pellets,1
+Pilgrimberry,1,Faecium,1,,,Creature Pellets,1
+Fireberry,1,Faecium,1,,,Creature Pellets,1
+Grahberry,1,Faecium,1,,,Creature Pellets,1
+Hexaberry,1,Faecium,1,,,Creature Pellets,1
+Sweetroot,1,Faecium,1,,,Creature Pellets,1
+Marrow Bulb,1,Faecium,1,,,Creature Pellets,1
+Star Bulb,1,Faecium,1,,,Creature Pellets,1
+Cactus Flesh,1,Faecium,1,,,Creature Pellets,1
+Scented Herbs,1,Faecium,1,,,Creature Pellets,1
+Enzyme Fluid,1,Faecium,1,,,Creature Pellets,1
+Fermented Fruit,1,Faecium,1,,,Creature Pellets,1
+Carbon,1,,,,,Creature Pellets,1
+Cactus Flesh,1,Salt,1,Fire Water,1,Salty Juice,1
+Bone Nuggets,1,,,,,Bone Milk,1
+Bone Milk,1,,,,,Bone Cream,1
+Bone Cream,1,,,,,Bone Butter,1
+Bone Cream,1,Processed Sugar,1,Creature Egg,1,Very Thick Custard,1
+Bone Cream,1,Wild Yeast,1,,,Bone Cheese,1
+Very Thick Custard,1,Frozen Tubers,1,,,Icey Marrow,1
+Very Thick Custard,1,Frost Crystal,1,,,Icey Marrow,1
+Very Thick Custard,1,Frozen Tubers,1,Bittersweet Cocoa,1,Chocolate Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Bittersweet Cocoa,1,Chocolate Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Crunchy Caramel,1,Caramel Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Crunchy Caramel,1,Caramel Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Crab 'Apple',1,'Apple' Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Crab 'Apple',1,'Apple' Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Wriggling Jam,1,'Apple' Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Wriggling Jam,1,'Apple' Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Synthetic Honey,1,Honey Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Synthetic Honey,1,Honey Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Sticky 'Honey',1,Honey Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Sticky 'Honey',1,Honey Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Hexaberry,1,Perpetual Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Hexaberry,1,Perpetual Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Anomalous Jam,1,Perpetual Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Anomalous Jam,1,Perpetual Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Grahberry,1,Vy'ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Grahberry,1,Vy'ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Grahj'am,1,Vy'ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Grahj'am,1,Vy'ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Ever-burning Jam,1,Spiced Ice,1
+Very Thick Custard,1,Frost Crystal,1,Ever-burning Jam,1,Spiced Ice,1
+Very Thick Custard,1,Frozen Tubers,1,Fireberry,1,Spiced Ice,1
+Very Thick Custard,1,Frost Crystal,1,Fireberry,1,Spiced Ice,1
+Very Thick Custard,1,Frozen Tubers,1,Cactus Jelly,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Cactus Jelly,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Furball Jelly,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Furball Jelly,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Cactus Nectar,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Cactus Nectar,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Leopard-Fruit,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Leopard-Fruit,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Sweetroot,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Sweetroot,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frozen Tubers,1,Pilgrimberry,1,Fruity Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Pilgrimberry,1,Fruity Ice Cream,1
+Bone Butter,1,Bone Butter,1,,,Clarified Oil,1
+Bone Butter,1,Proto-Butter,1,,,Clarified Oil,1
+Bone Butter,1,Churned Butter,1,,,Clarified Oil,1
+Bone Butter,1,Synthetic Honey,1,,,Honey Butter,1
+Bone Butter,1,Processed Sugar,1,,,Sweetened Butter,1
+Bone Butter,1,Sticky 'Honey',1,,,Gooey Butter,1
+Refined Flour,1,Bone Butter,1,,,Pastry,1
+Pie Case,1,Bone Cheese,1,,,Baked Cheese Tart,1
+Pie Case,1,Bone Cheese,1,Solartillo,1,Cheesy Vegetable Pie,1
+Pie Case,1,Bone Cheese,1,Jade Peas,1,Cheesy Vegetable Pie,1
+Pie Case,1,Bone Cheese,1,Sievert Beans,1,Cheesy Vegetable Pie,1
+Pie Case,1,Bone Cheese,1,Pulpy Roots,1,Cheesy Vegetable Pie,1
+Pie Case,1,Bone Cheese,1,Aloe Flesh,1,Cheesy Vegetable Pie,1
+Larval Core,1,Bone Cheese,1,,,Whispering Omelette,1
+Creature Egg,1,Bone Cheese,1,,,Scrambled Marrow,1
+Tall Eggs,1,Bone Cheese,1,,,Scrambled Marrow,1
+Giant Egg,1,Bone Cheese,1,,,Scrambled Marrow,1
+Creature Egg,1,Bone Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Tall Eggs,1,Bone Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Giant Egg,1,Bone Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Creature Egg,1,Tangy Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Tall Eggs,1,Tangy Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Giant Egg,1,Tangy Cheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Creature Egg,1,ProtoCheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Tall Eggs,1,ProtoCheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Giant Egg,1,ProtoCheese,1,Foraged Mushrooms,1,Fungal Omelette,1
+Scrambled Marrow,1,Foraged Mushrooms,1,,,Fungal Omelette,1
+Omelette,1,Foraged Mushrooms,1,,,Fungal Omelette,1
+Cream,1,Bone Cheese,1,,,Partially-Liquid Cheese,1
+Proto-Cream,1,Bone Cheese,1,,,Partially-Liquid Cheese,1
+Lumpen Doughnut,1,Very Thick Custard,1,,,Custard Doughnut,1
+"Thick, Sweet Batter",1,Very Thick Custard,1,,,Gooey Custard Fancy,1
+"Writhing, Roiling Batter",1,Very Thick Custard,1,,,Cake of the Lost,1
+Extra-Fluffy Batter,1,Very Thick Custard,1,,,Soft Custard Fancy,1
+Wailing Batter,1,Very Thick Custard,1,,,"Horrifying, Gooey Delight",1
+Proto-Batter,1,Very Thick Custard,1,,,Custard Curiosity,1
+Pie Case,1,Very Thick Custard,1,,,Custard Tart,1
+Cake Batter,1,Very Thick Custard,1,,,Custard Fancy,1
+Pie Case,1,Bone Cream,1,,,Creamy Treat,1
+Bone Cream,1,Bone Cream,1,,,Creamy Sauce,1
+Bone Cream,1,Proto-Cream,1,,,Creamy Sauce,1
+Bone Cream,1,Tangy Cheese,1,,,Partially-Liquid Cheese,1
+Bone Cream,1,ProtoCheese,1,,,Partially-Liquid Cheese,1
+Cake Batter,1,Bone Cream,1,,,Cream Buns,1
+Cake Batter,1,Anomalous Jam,1,Bone Cream,1,Perpetual Cake,1
+Cake Batter,1,Ever-burning Jam,1,Bone Cream,1,Ever-Boiling Cake,1
+Cake Batter,1,Grahj'am,1,Bone Cream,1,Traditional Cake,1
+Cake Batter,1,Cactus Jelly,1,Bone Cream,1,Esophageal Surprise,1
+Cake Batter,1,Furball Jelly,1,Bone Cream,1,Traditional Cake,1
+Cake Batter,1,Wriggling Jam,1,Bone Cream,1,Spiced 'Apple' Cake,1
+Proto-Batter,1,Bone Cream,1,,,Cream Curiosity,1
+Proto-Batter,1,Anomalous Jam,1,Bone Cream,1,Unsolvable Jam Turnover,1
+Proto-Batter,1,Ever-burning Jam,1,Bone Cream,1,Startling Fancy,1
+Proto-Batter,1,Grahj'am,1,Bone Cream,1,Jam Curiosity,1
+Proto-Batter,1,Cactus Jelly,1,Bone Cream,1,Prickly Curiosity,1
+Proto-Batter,1,Furball Jelly,1,Bone Cream,1,Jam Curiosity,1
+Proto-Batter,1,Wriggling Jam,1,Bone Cream,1,'Apple' Curiosity,1
+"Thick, Sweet Batter",1,Bone Cream,1,,,Sweet Cream Dreams,1
+"Thick, Sweet Batter",1,Anomalous Jam,1,Bone Cream,1,Perpetual Honeycake,1
+"Thick, Sweet Batter",1,Ever-burning Jam,1,Bone Cream,1,Gooey Mouthburner,1
+"Thick, Sweet Batter",1,Grahj'am,1,Bone Cream,1,Jam Oozers,1
+"Thick, Sweet Batter",1,Cactus Jelly,1,Bone Cream,1,Honied Throat-Sticker,1
+"Thick, Sweet Batter",1,Furball Jelly,1,Bone Cream,1,Jam Oozers,1
+"Thick, Sweet Batter",1,Wriggling Jam,1,Bone Cream,1,Gooey Fruit Surprise,1
+Wailing Batter,1,Bone Cream,1,,,Doomed Cream Cake,1
+Wailing Batter,1,Anomalous Jam,1,Bone Cream,1,Cake of Glass,1
+Wailing Batter,1,Ever-burning Jam,1,Bone Cream,1,Cake of Burning Dread,1
+Wailing Batter,1,Grahj'am,1,Bone Cream,1,Appalling Jam Sponge,1
+Wailing Batter,1,Cactus Jelly,1,Bone Cream,1,Choking Monstrosity Cake,1
+Wailing Batter,1,Furball Jelly,1,Bone Cream,1,Appalling Jam Sponge,1
+Wailing Batter,1,Wriggling Jam,1,Bone Cream,1,'Apple' Cake of Lost Souls,1
+Extra-Fluffy Batter,1,Bone Cream,1,,,Extra-Fluffy Cream Cake,1
+Extra-Fluffy Batter,1,Anomalous Jam,1,Bone Cream,1,Perpetual Jam Fluffer,1
+Extra-Fluffy Batter,1,Ever-burning Jam,1,Bone Cream,1,Burning Jam Fluffer,1
+Extra-Fluffy Batter,1,Grahj'am,1,Bone Cream,1,Jam Fluffer,1
+Extra-Fluffy Batter,1,Cactus Jelly,1,Bone Cream,1,Soft and Spiky Surprise,1
+Extra-Fluffy Batter,1,Furball Jelly,1,Bone Cream,1,Jam Fluffer,1
+Extra-Fluffy Batter,1,Wriggling Jam,1,Bone Cream,1,Angelic Fruitcake,1
+"Writhing, Roiling Batter",1,Bone Cream,1,,,Unbound Cream Horn,1
+"Writhing, Roiling Batter",1,Anomalous Jam,1,Bone Cream,1,Unbound Monstrosity,1
+"Writhing, Roiling Batter",1,Ever-burning Jam,1,Bone Cream,1,Burning Jam Surprise,1
+"Writhing, Roiling Batter",1,Grahj'am,1,Bone Cream,1,Writhing Jam Puff,1
+"Writhing, Roiling Batter",1,Cactus Jelly,1,Bone Cream,1,Fluffy Throatripper,1
+"Writhing, Roiling Batter",1,Furball Jelly,1,Bone Cream,1,Writhing Jam Puff,1
+"Writhing, Roiling Batter",1,Wriggling Jam,1,Bone Cream,1,Cake of Sin,1
+Scooped Innards,1,,,,,Processed Meat,1
+Crystal Flesh,1,,,,,Processed Meat,1
+Latticed Sinew,1,,,,,Processed Meat,1
+Crunchy Wings,1,,,,,Processed Meat,1
+Lumpy Brainstem,1,,,,,Processed Meat,1
+Dirty Meat,1,,,,,Processed Meat,1
+Scooped Innards,1,Carbon,1,,,Smoked Meat,1
+Crystal Flesh,1,Carbon,1,,,Smoked Meat,1
+Latticed Sinew,1,Carbon,1,,,Smoked Meat,1
+Crunchy Wings,1,Carbon,1,,,Smoked Meat,1
+Lumpy Brainstem,1,Carbon,1,,,Smoked Meat,1
+Dirty Meat,1,Carbon,1,,,Smoked Meat,1
+Scooped Innards,1,Condensed Carbon,1,,,Smoked Meat,1
+Crystal Flesh,1,Condensed Carbon,1,,,Smoked Meat,1
+Latticed Sinew,1,Condensed Carbon,1,,,Smoked Meat,1
+Crunchy Wings,1,Condensed Carbon,1,,,Smoked Meat,1
+Lumpy Brainstem,1,Condensed Carbon,1,,,Smoked Meat,1
+Dirty Meat,1,Condensed Carbon,1,,,Smoked Meat,1
+Pie Case,1,Foraged Mushrooms,1,,,Earthy Pie,1
+Pie Case,1,Crystal Flesh,1,,,The Toothbreaker,1
+Pie Case,1,Latticed Sinew,1,,,Gristle Pie,1
+Pie Case,1,Crunchy Wings,1,,,Leathery Tart,1
+Pie Case,1,Lumpy Brainstem,1,,,Gritty Meat Pie,1
+Pie Case,1,Dirty Meat,1,,,The Pie Of Knowledge,1
+Pie Case,1,Scooped Innards,1,,,Chewy Organ Pie,1
+Horrifying Mush,1,Crystal Flesh,1,,,Abyssal Stew,1
+Horrifying Mush,1,Latticed Sinew,1,,,Abyssal Stew,1
+Horrifying Mush,1,Crunchy Wings,1,,,Abyssal Stew,1
+Horrifying Mush,1,Lumpy Brainstem,1,,,Abyssal Stew,1
+Horrifying Mush,1,Dirty Meat,1,,,Abyssal Stew,1
+Horrifying Mush,1,Scooped Innards,1,,,Abyssal Stew,1
+Horrifying Mush,1,Foraged Mushrooms,1,,,Abyssal Stew,1
+Horrifying Mush,1,Bone Nuggets,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Crystal Flesh,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Latticed Sinew,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Crunchy Wings,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Lumpy Brainstem,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Dirty Meat,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Scooped Innards,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Foraged Mushrooms,1,,,Abyssal Stew,1
+Hypnotic Eye,1,Bone Nuggets,1,,,Abyssal Stew,1
+Crystalline Soup,1,Partially-Liquid Cheese,1,,,Tangy Organ Surprise,1
+Well-Stirred Stew,1,Partially-Liquid Cheese,1,,,Cheese-and-Flesh Stew,1
+Gelatinous Goop,1,Partially-Liquid Cheese,1,,,Tangy Organ Surprise,1
+Soiled Soup,1,Partially-Liquid Cheese,1,,,Cheese-and-Flesh Stew,1
+Chewy 'Dumpling' Stew,1,Partially-Liquid Cheese,1,,,Tangy Organ Surprise,1
+Crystalline Soup,1,Creamy Sauce,1,,,Creamed Organ Soup,1
+Well-Stirred Stew,1,Creamy Sauce,1,,,Thick Meat Stew,1
+Gelatinous Goop,1,Creamy Sauce,1,,,Creamed Organ Soup,1
+Soiled Soup,1,Creamy Sauce,1,,,Thick Meat Stew,1
+Chewy 'Dumpling' Stew,1,Creamy Sauce,1,,,Creamed Organ Soup,1
+Crystalline Soup,1,Scorching Sauce,1,,,Devilled Organs,1
+Well-Stirred Stew,1,Scorching Sauce,1,,,Spicy Fleshballs,1
+Gelatinous Goop,1,Scorching Sauce,1,,,Devilled Organs,1
+Soiled Soup,1,Scorching Sauce,1,,,Spicy Fleshballs,1
+Chewy 'Dumpling' Stew,1,Scorching Sauce,1,,,Devilled Organs,1
+Crystalline Soup,1,Flavoursome Sauce,1,,,Flavoursome Organs,1
+Well-Stirred Stew,1,Flavoursome Sauce,1,,,Herb-Encrusted Flesh,1
+Gelatinous Goop,1,Flavoursome Sauce,1,,,Flavoursome Organs,1
+Soiled Soup,1,Flavoursome Sauce,1,,,Herb-Encrusted Flesh,1
+Chewy 'Dumpling' Stew,1,Flavoursome Sauce,1,,,Flavoursome Organs,1
+Scooped Innards,1,Scooped Innards,1,,,Stewed Organs,1
+Scooped Innards,1,Feline Liver,1,,,Stewed Organs,1
+Scooped Innards,1,Offal Sac,1,,,Stewed Organs,1
+Scooped Innards,1,Crystal Flesh,1,,,Stewed Organs,1
+Scooped Innards,1,Latticed Sinew,1,,,Stewed Organs,1
+Scooped Innards,1,Crunchy Wings,1,,,Stewed Organs,1
+Scooped Innards,1,Lumpy Brainstem,1,,,Stewed Organs,1
+Scooped Innards,1,Dirty Meat,1,,,Stewed Organs,1
+Crystal Flesh,1,Crystal Flesh,1,,,Crystalline Soup,1
+Crystal Flesh,1,Processed Meat,1,,,Crystalline Soup,1
+Crystal Flesh,1,Meaty Chunks,1,,,Crystalline Soup,1
+Crystal Flesh,1,Smoked Meat,1,,,Crystalline Soup,1
+Crystal Flesh,1,Salty Chunks,1,,,Crystalline Soup,1
+Crystal Flesh,1,Meaty Wings,1,,,Crystalline Soup,1
+Crystal Flesh,1,Fiendish Roe,1,,,Crystalline Soup,1
+Crystal Flesh,1,Offal Sac,1,,,Crystalline Soup,1
+Crystal Flesh,1,ProtoSausage,1,,,Crystalline Soup,1
+Crystal Flesh,1,Diplo Chunks,1,,,Crystalline Soup,1
+Crystal Flesh,1,Scaly Meat,1,,,Crystalline Soup,1
+Crystal Flesh,1,Feline Liver,1,,,Crystalline Soup,1
+Crystal Flesh,1,Strider Sausage,1,,,Crystalline Soup,1
+Crystal Flesh,1,Raw Steak,1,,,Crystalline Soup,1
+Crystal Flesh,1,Leg Meat,1,,,Crystalline Soup,1
+Latticed Sinew,1,Latticed Sinew,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Processed Meat,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Meaty Chunks,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Smoked Meat,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Salty Chunks,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Meaty Wings,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Fiendish Roe,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Offal Sac,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,ProtoSausage,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Diplo Chunks,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Scaly Meat,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Feline Liver,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Strider Sausage,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Raw Steak,1,,,Well-Stirred Stew,1
+Latticed Sinew,1,Leg Meat,1,,,Well-Stirred Stew,1
+Lumpy Brainstem,1,Lumpy Brainstem,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Processed Meat,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Meaty Chunks,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Smoked Meat,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Salty Chunks,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Meaty Wings,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Fiendish Roe,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Offal Sac,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,ProtoSausage,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Diplo Chunks,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Scaly Meat,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Feline Liver,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Strider Sausage,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Raw Steak,1,,,Chewy 'Dumpling' Stew,1
+Lumpy Brainstem,1,Leg Meat,1,,,Chewy 'Dumpling' Stew,1
+Dirty Meat,1,Dirty Meat,1,,,Soiled Soup,1
+Dirty Meat,1,Processed Meat,1,,,Soiled Soup,1
+Dirty Meat,1,Meaty Chunks,1,,,Soiled Soup,1
+Dirty Meat,1,Smoked Meat,1,,,Soiled Soup,1
+Dirty Meat,1,Salty Chunks,1,,,Soiled Soup,1
+Dirty Meat,1,Meaty Wings,1,,,Soiled Soup,1
+Dirty Meat,1,Fiendish Roe,1,,,Soiled Soup,1
+Dirty Meat,1,Offal Sac,1,,,Soiled Soup,1
+Dirty Meat,1,ProtoSausage,1,,,Soiled Soup,1
+Dirty Meat,1,Diplo Chunks,1,,,Soiled Soup,1
+Dirty Meat,1,Scaly Meat,1,,,Soiled Soup,1
+Dirty Meat,1,Feline Liver,1,,,Soiled Soup,1
+Dirty Meat,1,Strider Sausage,1,,,Soiled Soup,1
+Dirty Meat,1,Raw Steak,1,,,Soiled Soup,1
+Dirty Meat,1,Leg Meat,1,,,Soiled Soup,1
+Crunchy Wings,1,Crunchy Wings,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Processed Meat,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Meaty Chunks,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Smoked Meat,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Salty Chunks,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Meaty Wings,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Fiendish Roe,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Offal Sac,1,,,Gelatinous Goop,1
+Crunchy Wings,1,ProtoSausage,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Diplo Chunks,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Scaly Meat,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Feline Liver,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Strider Sausage,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Raw Steak,1,,,Gelatinous Goop,1
+Crunchy Wings,1,Leg Meat,1,,,Gelatinous Goop,1
+Foraged Mushrooms,1,,,,,Steamed Vegetables,1
+Steamed Vegetables,1,Foraged Mushrooms,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Sievert Beans,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Sweetroot,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Pulpy Roots,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Impulse Beans,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Solartillo,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Jade Peas,1,,,Fibrous Stew,1
+Foraged Mushrooms,1,Non-Toxic Mushroom,1,,,Fibrous Stew,1
+Chewy Wires,1,,,,,Carbon Nanotubes,1
+Craw Milk,1,,,,,Proto-Cream,1
+Flesh Rope,1,,,,,Gelatinous Membrane,1
+Gelatinous Membrane,1,Larval Core,1,,,Nightmare Sausage,1
+Gelatinous Membrane,1,Hypnotic Eye,1,,,Nightmare Sausage,1
+Gelatinous Membrane,1,Hadal Core,1,,,Nightmare Sausage,1
+Nightmare Sausage,1,Processed Sugar,1,,,Syrupy Viscera,1
+Refined Flour,1,Processed Sugar,1,,,Sugar Dough,1
+Sugar Dough,1,,,,,Simple Biscuit,1
+Sugar Dough,1,Salt,1,,,Salty Cruncher,1
+Sugar Dough,1,Grahj'am,1,,,Jammy Rounds,1
+Sugar Dough,1,Furball Jelly,1,,,Cough Biscuits,1
+Sugar Dough,1,Leopard-Fruit,1,,,Cough Biscuits,1
+Sugar Dough,1,Ever-burning Jam,1,,,Burning Surprise,1
+Sugar Dough,1,Fireberry,1,,,Burning Surprise,1
+Sugar Dough,1,Fire Water,1,,,Burning Surprise,1
+Sugar Dough,1,Anomalous Jam,1,,,Baked Anomaly,1
+Sugar Dough,1,Hexaberry,1,,,Baked Anomaly,1
+Sugar Dough,1,Tangy Cheese,1,,,Curdy Cracker,1
+Sugar Dough,1,ProtoCheese,1,,,Curdy Cracker,1
+Sugar Dough,1,Partially-Liquid Cheese,1,,,Curdy Cracker,1
+Sugar Dough,1,Bone Cheese,1,,,Curdy Cracker,1
+Sugar Dough,1,Nightmare Sausage,1,,,Wriggling Tack,1
+Sugar Dough,1,Flesh Rope,1,,,Wriggling Tack,1
+Sugar Dough,1,Hadal Core,1,,,Fish Biscuit,1
+Sugar Dough,1,Salty Chunks,1,,,Fish Biscuit,1
+Sugar Dough,1,Cactus Jelly,1,,,Tooth Pickers,1
+Sugar Dough,1,Cactus Nectar,1,,,Tooth Pickers,1
+Sugar Dough,1,Larval Core,1,,,Haunted Wafer,1
+Sugar Dough,1,Hypnotic Eye,1,,,Haunted Wafer,1
+Sugar Dough,1,Non-Toxic Mushroom,1,,,Spore Dunkers,1
+Sugar Dough,1,Foraged Mushrooms,1,,,Spore Dunkers,1
+Sugar Dough,1,Bittersweet Cocoa,1,,,Cocoa Creams,1
+Sugar Dough,1,Crunchy Caramel,1,,,Sticky Finger,1
+Sugar Dough,1,Proto-Cream,1,,,Cream Fingers,1
+Sugar Dough,1,Cream,1,,,Cream Fingers,1
+Sugar Dough,1,Salty Custard,1,,,Cream Fingers,1
+Sugar Dough,1,Monstrous Custard,1,,,Cream Fingers,1
+Sugar Dough,1,Viscous Custard,1,,,Cream Fingers,1
+Sugar Dough,1,Stellar Custard,1,,,Cream Fingers,1
+Sugar Dough,1,Bone Cream,1,,,Cream Fingers,1
+Sugar Dough,1,Warm Proto-Milk,1,,,Enriched Biscuit,1
+Sugar Dough,1,Fresh Milk,1,,,Enriched Biscuit,1
+Sugar Dough,1,Wild Milk,1,,,Enriched Biscuit,1
+Sugar Dough,1,Bone Nuggets,1,,,Enriched Biscuit,1
+Sugar Dough,1,Bone Milk,1,,,Enriched Biscuit,1
+Sugar Dough,1,Wriggling Jam,1,,,'Apple' Roll,1
+Sugar Dough,1,Crab 'Apple',1,,,'Apple' Roll,1
+Sugar Dough,1,Synthetic Honey,1,,,Honey Waffle,1
+Sugar Dough,1,Sticky 'Honey',1,,,Honey Waffle,1
+Sugar Dough,1,GekNip,1,,,Herbal Crunchie,1
+Sugar Dough,1,NipNip Buds,1,,,Herbal Crunchie,1
+Sugar Dough,1,Impulse Beans,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Pilgrimberry,1,,,Floral Wafer,1
+Sugar Dough,1,Solartillo,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Frozen Tubers,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Glass Grains,1,,,Cough Biscuits,1
+Sugar Dough,1,Jade Peas,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Grahberry,1,,,Floral Wafer,1
+Sugar Dough,1,Sievert Beans,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Aloe Flesh,1,,,Floral Wafer,1
+Sugar Dough,1,Heptaploid Wheat,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Sweetroot,1,,,Floral Wafer,1
+Sugar Dough,1,Pulpy Roots,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Marrow Flesh,1,,,Floral Wafer,1
+Sugar Dough,1,Kelp Rice,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Wild Yeast,1,,,Questionable Biscuit,1
+Sugar Dough,1,Meat Flakes,1,,,Questionable Biscuit,1
+Sugar Dough,1,Silicon Egg,1,,,Baked Anomaly,1
+Sugar Dough,1,Giant Egg,1,,,Enriched Biscuit,1
+Sugar Dough,1,Regis Grease,1,,,Questionable Biscuit,1
+Sugar Dough,1,Tall Eggs,1,,,Enriched Biscuit,1
+Sugar Dough,1,Chewy Wires,1,,,Questionable Biscuit,1
+Sugar Dough,1,Craw Milk,1,,,Enriched Biscuit,1
+Sugar Dough,1,Creature Egg,1,,,Enriched Biscuit,1
+Sugar Dough,1,Meaty Wings,1,,,Questionable Biscuit,1
+Sugar Dough,1,Fiendish Roe,1,,,Haunted Wafer,1
+Sugar Dough,1,Offal Sac,1,,,Questionable Biscuit,1
+Sugar Dough,1,ProtoSausage,1,,,Questionable Biscuit,1
+Sugar Dough,1,Diplo Chunks,1,,,Questionable Biscuit,1
+Sugar Dough,1,Scaly Meat,1,,,Questionable Biscuit,1
+Sugar Dough,1,Feline Liver,1,,,Questionable Biscuit,1
+Sugar Dough,1,Strider Sausage,1,,,Questionable Biscuit,1
+Sugar Dough,1,Raw Steak,1,,,Questionable Biscuit,1
+Sugar Dough,1,Leg Meat,1,,,Questionable Biscuit,1
+Sugar Dough,1,Scooped Innards,1,,,Questionable Biscuit,1
+Sugar Dough,1,Crystal Flesh,1,,,Questionable Biscuit,1
+Sugar Dough,1,Latticed Sinew,1,,,Questionable Biscuit,1
+Sugar Dough,1,Crunchy Wings,1,,,Questionable Biscuit,1
+Sugar Dough,1,Lumpy Brainstem,1,,,Questionable Biscuit,1
+Sugar Dough,1,Dirty Meat,1,,,Questionable Biscuit,1
+Sugar Dough,1,Meaty Chunks,1,,,Questionable Biscuit,1
+Sugar Dough,1,Steamed Vegetables,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Processed Meat,1,,,Questionable Biscuit,1
+Sugar Dough,1,Smoked Meat,1,,,Questionable Biscuit,1
+Sugar Dough,1,Carbon,1,,,Well-Smoked Biscuit,1
+Sugar Dough,1,Condensed Carbon,1,,,Well-Smoked Biscuit,1
+Sugar Dough,1,Star Bulb,1,,,Floral Wafer,1
+Sugar Dough,1,Solanium,1,,,Floral Wafer,1
+Sugar Dough,1,Frost Crystal,1,,,Cough Biscuits,1
+Sugar Dough,1,Fungal Mould,1,,,Spore Dunkers,1
+Sugar Dough,1,Gamma Root,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Cactus Flesh,1,,,Tooth Pickers,1
+Sugar Dough,1,Faecium,1,,,Questionable Biscuit,1
+Sugar Dough,1,Mordite,1,,,Questionable Biscuit,1
+Sugar Dough,1,Marrow Bulb,1,,,Healthy Wheatblock,1
+Sugar Dough,1,Kelp Sac,1,,,Salty Cruncher,1
+Pie Case,1,Nourishing Slime,1,,,Solidified Grease Pie,1
+Sugar Dough,1,Nourishing Slime,1,,,Chewy Biscuit,1
+Sugar Dough,1,Sweetened Mucous,1,,,Chewy Biscuit,1
+Nourishing Slime,1,Processed Sugar,1,,,Sweetened Mucous,1
+Hypnotic Eye,1,Nourishing Slime,1,,,Abyssal Stew,1
+Horrifying Mush,1,Nourishing Slime,1,,,Abyssal Stew,1
+Lumpen Doughnut,1,Sweetened Mucous,1,,,Mucal Doughnut,1
+"Writhing, Roiling Batter",1,Sweetened Mucous,1,Bone Cream,1,Squirming Fancy,1
+Extra-Fluffy Batter,1,Sweetened Mucous,1,Bone Cream,1,Frosted Mire,1
+Wailing Batter,1,Sweetened Mucous,1,Bone Cream,1,Primordial Sponge,1
+"Thick, Sweet Batter",1,Sweetened Mucous,1,Bone Cream,1,Nourishing Oozer,1
+Proto-Batter,1,Sweetened Mucous,1,Bone Cream,1,Mucal Curiosity,1
+Cake Batter,1,Sweetened Mucous,1,Bone Cream,1,Gelatinous Sponge,1
+"Writhing, Roiling Batter",1,Sweetened Mucous,1,Cream,1,Squirming Fancy,1
+Extra-Fluffy Batter,1,Sweetened Mucous,1,Cream,1,Frosted Mire,1
+Wailing Batter,1,Sweetened Mucous,1,Cream,1,Primordial Sponge,1
+"Thick, Sweet Batter",1,Sweetened Mucous,1,Cream,1,Nourishing Oozer,1
+Proto-Batter,1,Sweetened Mucous,1,Cream,1,Mucal Curiosity,1
+Cake Batter,1,Sweetened Mucous,1,Cream,1,Gelatinous Sponge,1
+Very Thick Custard,1,Frozen Tubers,1,Sweetened Mucous,1,Slime Pop,1
+Very Thick Custard,1,Frost Crystal,1,Sweetened Mucous,1,Slime Pop,1
+Viscous Custard,1,Frost Crystal,1,Sweetened Mucous,1,Slime Pop,1
+Viscous Custard,1,Frozen Tubers,1,Sweetened Mucous,1,Slime Pop,1
+Pie Case,1,Sweetened Mucous,1,,,Muculent Tart,1
+Sugar Dough,1,Juicy Thorax,1,,,Questionable Biscuit,1
+Crunchy Wings,1,Juicy Thorax,1,,,Gelatinous Goop,1
+Dirty Meat,1,Juicy Thorax,1,,,Soiled Soup,1
+Lumpy Brainstem,1,Juicy Thorax,1,,,Chewy 'Dumpling' Stew,1
+Latticed Sinew,1,Juicy Thorax,1,,,Well-Stirred Stew,1
+Crystal Flesh,1,Juicy Thorax,1,,,Crystalline Soup,1
+Hypnotic Eye,1,Juicy Thorax,1,,,Abyssal Stew,1
+Horrifying Mush,1,Juicy Thorax,1,,,Abyssal Stew,1
+Pie Case,1,Juicy Thorax,1,,,Seeping Pie,1
+Juicy Thorax,1,Condensed Carbon,1,,,Smoked Meat,1
+Juicy Thorax,1,Carbon,1,,,Smoked Meat,1
+Juicy Thorax,1,,,,,Processed Meat,1
+Juicy Thorax,1,Juicy Thorax,1,,,Popping Stew,1
+Juicy Thorax,1,Processed Meat,1,,,Popping Stew,1
+Juicy Thorax,1,Meaty Chunks,1,,,Popping Stew,1
+Juicy Thorax,1,Smoked Meat,1,,,Popping Stew,1
+Juicy Thorax,1,Salty Chunks,1,,,Popping Stew,1
+Juicy Thorax,1,Meaty Wings,1,,,Popping Stew,1
+Juicy Thorax,1,Fiendish Roe,1,,,Popping Stew,1
+Juicy Thorax,1,Offal Sac,1,,,Popping Stew,1
+Juicy Thorax,1,ProtoSausage,1,,,Popping Stew,1
+Juicy Thorax,1,Diplo Chunks,1,,,Popping Stew,1
+Juicy Thorax,1,Scaly Meat,1,,,Popping Stew,1
+Juicy Thorax,1,Feline Liver,1,,,Popping Stew,1
+Juicy Thorax,1,Strider Sausage,1,,,Popping Stew,1
+Juicy Thorax,1,Raw Steak,1,,,Popping Stew,1
+Juicy Thorax,1,Leg Meat,1,,,Popping Stew,1
+Creature Egg,1,Bone Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Tall Eggs,1,Bone Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Giant Egg,1,Bone Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Creature Egg,1,Tangy Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Tall Eggs,1,Tangy Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Giant Egg,1,Tangy Cheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Creature Egg,1,ProtoCheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Tall Eggs,1,ProtoCheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Giant Egg,1,ProtoCheese,1,Juicy Thorax,1,Bugs-in-a-Blanket,1
+Scrambled Marrow,1,Juicy Thorax,1,,,Bugs-in-a-Blanket,1
+Omelette,1,Juicy Thorax,1,,,Bugs-in-a-Blanket,1
+Syrupy Nectar,1,,,,,Synthetic Honey,1
+Bone Butter,1,Syrupy Nectar,1,,,Butter Syrup,1
+Very Thick Custard,1,Frozen Tubers,1,Syrupy Nectar,1,Honey Ice Cream,1
+Very Thick Custard,1,Frost Crystal,1,Syrupy Nectar,1,Honey Ice Cream,1
+Viscous Custard,1,Frozen Tubers,1,Syrupy Nectar,1,Honey Ice Cream,1
+Viscous Custard,1,Frost Crystal,1,Syrupy Nectar,1,Honey Ice Cream,1
+"Writhing, Roiling Batter",1,Syrupy Nectar,1,,,Ambrosial Curse,1
+Extra-Fluffy Batter,1,Syrupy Nectar,1,,,Nectar Islands,1
+Wailing Batter,1,Syrupy Nectar,1,,,Cake of Eternal Sleep,1
+"Thick, Sweet Batter",1,Syrupy Nectar,1,,,Syrup-Drenched Delight,1
+Proto-Batter,1,Syrupy Nectar,1,,,Nectar Sponge Cake,1
+Cake Batter,1,Syrupy Nectar,1,,,Syrup-Drenched Delight,1
+Pie Case,1,Syrupy Nectar,1,,,Honey Tart,1
+Churned Butter,1,Syrupy Nectar,1,,,Butter Syrup,1
+Proto-Butter,1,Syrupy Nectar,1,,,Syrupy Proto-Butter,1
+"Writhing, Roiling Batter",1,Butter Syrup,1,,,Ambrosial Curse,1
+Extra-Fluffy Batter,1,Butter Syrup,1,,,Nectar Islands,1
+Wailing Batter,1,Butter Syrup,1,,,Cake of Eternal Sleep,1
+"Thick, Sweet Batter",1,Butter Syrup,1,,,Syrup-Drenched Delight,1
+Proto-Batter,1,Butter Syrup,1,,,Nectar Sponge Cake,1
+Cake Batter,1,Butter Syrup,1,,,Syrup-Drenched Delight,1
+Butter Syrup,1,Refined Flour,1,Larval Core,1,Wailing Batter,1
+Butter Syrup,1,Refined Flour,1,Giant Egg,1,Syrupy Batter,1
+Butter Syrup,1,Refined Flour,1,Tall Eggs,1,Syrupy Batter,1
+Butter Syrup,1,Refined Flour,1,Creature Egg,1,Syrupy Batter,1
+Lumpen Doughnut,1,Butter Syrup,1,,,Pollen Puffball,1
+Syrupy Batter,1,Sticky 'Honey',1,,,Syrup-Drenched Delight,1
+Syrupy Batter,1,Cream,1,,,Creamy Clouds of Nectar,1
+Syrupy Batter,1,Gooey Butter,1,,,Syrup-Drenched Delight,1
+Syrupy Batter,1,Bittersweet Cocoa,1,,,Chocolate Oozer,1
+Syrupy Batter,1,Crunchy Caramel,1,,,Syrupy Caramel Slice,1
+Syrupy Batter,1,Synthetic Honey,1,,,Ambrosial Wonder,1
+Syrupy Batter,1,Crab 'Apple',1,,,Candied 'Apples',1
+Syrupy Batter,1,Cactus Nectar,1,,,Hybrid Cake,1
+Syrupy Batter,1,Anomalous Jam,1,Cream,1,Xeno-Sponge,1
+Syrupy Batter,1,Ever-burning Jam,1,Cream,1,Syrupy Tingler,1
+Syrupy Batter,1,Grahj'am,1,Cream,1,Jammy Burster,1
+Syrupy Batter,1,Cactus Jelly,1,Cream,1,Hybrid Cake,1
+Syrupy Batter,1,Furball Jelly,1,Cream,1,Jammy Burster,1
+Syrupy Batter,1,Wriggling Jam,1,Cream,1,Candied 'Apples',1
+Syrupy Batter,1,Viscous Custard,1,,,Sponge of Ambrosia,1
+Syrupy Batter,1,Salty Custard,1,,,Sweet and Salty Puff,1
+Syrupy Batter,1,Monstrous Custard,1,,,Cake of Eternal Sleep,1
+Syrupy Batter,1,Stellar Custard,1,,,Starpollen Surprise,1
+Syrupy Batter,1,Butter Syrup,1,,,Syrup-Drenched Delight,1
+Syrupy Batter,1,Syrupy Nectar,1,,,Syrup-Drenched Delight,1
+Syrupy Batter,1,Sweetened Mucous,1,Cream,1,Splicer's Delight,1
+Syrupy Batter,1,Sweetened Mucous,1,Bone Cream,1,Splicer's Delight,1
+Syrupy Batter,1,Bone Cream,1,,,Creamy Clouds of Nectar,1
+Syrupy Batter,1,Anomalous Jam,1,Bone Cream,1,Xeno-Sponge,1
+Syrupy Batter,1,Ever-burning Jam,1,Bone Cream,1,Syrupy Tingler,1
+Syrupy Batter,1,Grahj'am,1,Bone Cream,1,Jammy Burster,1
+Syrupy Batter,1,Cactus Jelly,1,Bone Cream,1,Hybrid Cake,1
+Syrupy Batter,1,Furball Jelly,1,Bone Cream,1,Jammy Burster,1
+Syrupy Batter,1,Wriggling Jam,1,Bone Cream,1,Candied 'Apples',1
+Syrupy Batter,1,Very Thick Custard,1,,,Sponge of Ambrosia,1
+Juicy Grub,1,,,,,Nourishing Slime,1
+Rancid Flesh,1,,,,,Purged Ribs,1
+Juicy Grub,1,Rancid Flesh,1,,,The Worst Stew,1
+Tiny Scuttlefish,1,,,,,Fish Fry,1
+Mud Crab,1,,,,,Peeled Claws,1
+Pondskipper,1,,,,,Whitebait,1
+Reef Eel,1,,,,,Fleshy Cylinder,1
+Rockfin,1,,,,,Edible Chum,1
+Greenscale Bloater,1,,,,,Marine Steak,1
+Stonescale Shark,1,,,,,Fishy Slab,1
+Needlefish,1,,,,,Pickled Fish,1
+Spiny Starfish,1,,,,,Delicate Legs,1
+Hypnotic Octopus,1,,,,,Grilled Tentacle,1
+Longjaw Snapper,1,,,,,Grilled Fillet,1
+Whispering Bonefish,1,,,,,Brined Flesh,1
+Giant Ray,1,,,,,Whole Roast Fish,1
+Shrieking Oyster,1,,,,,Mollusc Flesh,1
+Moon Turtle,1,,,,,Boiled Flipper,1
+Colossal Shrimp,1,,,,,Shell Puree,1
+Thunderfin,1,,,,,Seafood 'Feast',1
+Singing Sea-Snail,1,,,,,Snail Fillet,1
+Golden Jellyfish,1,,,,,Jellymeat,1
+Dragonfish,1,,,,,Seared Fillet,1
+The Lunker,1,,,,,Fishy Slab,1
+Bileworm,1,,,,,Poached Worms,1
+Venomous Triggerfin,1,,,,,Fish Fry,1
+Sea Cucumber,1,,,,,Poached Worms,1
+Blistering Eel,1,,,,,Fleshy Cylinder,1
+Toxic Jelly,1,,,,,Jellymeat,1
+Green-Ring Octopus,1,,,,,Grilled Tentacle,1
+Giant Whiskerfish,1,,,,,Whole Roast Fish,1
+Caustic Urchin,1,,,,,Delicate Legs,1
+Weltscale Clam,1,,,,,Mollusc Flesh,1
+Acidic Pufferfish,1,,,,,Smoked Fish,1
+Toxic Stonefish,1,,,,,Edible Chum,1
+Venomtooth Wriggler,1,,,,,Marine Steak,1
+Bitterscale Ray,1,,,,,Seafood 'Feast',1
+Waspfish,1,,,,,Whitebait,1
+Scorpionfish,1,,,,,Grilled Fillet,1
+Shrieking Venttail,1,,,,,Brined Flesh,1
+Viper Eel,1,,,,,Fleshy Cylinder,1
+Emeril Sunstar,1,,,,,Delicate Legs,1
+Vampire Squid,1,,,,,Steamed Rubber,1
+Bleached Bonefish,1,,,,,Seared Fillet,1
+Translucent Gulper,1,,,,,Fishy Slab,1
+Bulging Snapper,1,,,,,Pickled Fish,1
+Spotted Protofin,1,,,,,Fish Fry,1
+Field's Dartfish,1,,,,,Whitebait,1
+Forktailed Splicer,1,,,,,Smoked Fish,1
+Inverted Snapper,1,,,,,Edible Chum,1
+Glowing Catfish,1,,,,,Marine Steak,1
+Polyscale Bloater,1,,,,,Whole Roast Fish,1
+Ionised Clam,1,,,,,Mollusc Flesh,1
+Nucleic Skipper,1,,,,,Pickled Fish,1
+Twisted Gulper,1,,,,,Grilled Fillet,1
+Depleted Razorjaw,1,,,,,Smoked Fish,1
+Radiant Sunfish,1,,,,,Brined Flesh,1
+Boiling Shark,1,,,,,Seafood 'Feast',1
+Geno-Prawn,1,,,,,Shell Puree,1
+Immortal Flatfish,1,,,,,Edible Chum,1
+Cyclopic Eel,1,,,,,Fleshy Cylinder,1
+Alpha Squid,1,,,,,Steamed Rubber,1
+Many-Eyed Jellyfish,1,,,,,Jellymeat,1
+Aberrant Duskfin,1,,,,,Grilled Fillet,1
+Gamma Squid,1,,,,,Steamed Rubber,1
+Helix Sawfish,1,,,,,Fishy Slab,1
+Oilfin,1,,,,,Fish Fry,1
+Common Sunfish,1,,,,,Whitebait,1
+Ash Snail,1,,,,,Snail Fillet,1
+Boiled Snapper,1,,,,,Shell Puree,1
+Lavascale Trout,1,,,,,Smoked Fish,1
+Sulphurfish,1,,,,,Seared Fillet,1
+Basalt-Tooth Bloater,1,,,,,Whole Roast Fish,1
+Lamptip Ray,1,,,,,Pickled Fish,1
+Pyrefin,1,,,,,Fish Fry,1
+Flashfire Eel,1,,,,,Fleshy Cylinder,1
+Solar Roach,1,,,,,Edible Chum,1
+Fumarole Gulper,1,,,,,Marine Steak,1
+Colossal Meltfin,1,,,,,Seafood 'Feast',1
+Cadmium Pearlcase,1,,,,,Mollusc Flesh,1
+Candelabra Octopus,1,,,,,Grilled Tentacle,1
+Magma Shark,1,,,,,Brined Flesh,1
+Hellion Bass,1,,,,,Fishy Slab,1
+Starshell Crab,1,,,,,Peeled Claws,1
+Mirrorscale Skipper,1,,,,,Grilled Fillet,1
+Jelly of the Veil,1,,,,,Jellymeat,1
+Ancient Irontail,1,,,,,Whole Roast Fish,1
+Ice Darter,1,,,,,Whitebait,1
+Frozen Whelk,1,,,,,Mollusc Flesh,1
+Frostscale Trout,1,,,,,Pickled Fish,1
+Midnight Eel,1,,,,,Fleshy Cylinder,1
+Thawed Diamondfin,1,,,,,Smoked Fish,1
+Glacier Carp,1,,,,,Seared Fillet,1
+Giant Hairy Crab,1,,,,,Peeled Claws,1
+Frostshell Clam,1,,,,,Mollusc Flesh,1
+Frozen Isopod,1,,,,,Shell Puree,1
+Brineskipper,1,,,,,Edible Chum,1
+Pale Snowtail,1,,,,,Grilled Fillet,1
+Frozen Knifejaw,1,,,,,Marine Steak,1
+Giant Icefin,1,,,,,Seafood 'Feast',1
+Rimescale Snapper,1,,,,,Fish Fry,1
+Iceshell Turtle,1,,,,,Boiled Flipper,1
+Frostbite Ray,1,,,,,Brined Flesh,1
+Black-Eyed Shark,1,,,,,Fishy Slab,1
+Crystal Jelly,1,,,,,Jellymeat,1
+Ghostfin,1,,,,,Smoked Fish,1
+Iceblood Gulper,1,,,,,Seared Fillet,1
+Nautilia,1,,,,,Snail Fillet,1
+Shadowfin,1,,,,,Whitebait,1
+Warty Frogfish,1,,,,,Pickled Fish,1
+Common Shimmertail,1,,,,,Fish Fry,1
+Wandering Kelpfin,1,,,,,Edible Chum,1
+Clearwater Skipper,1,,,,,Grilled Fillet,1
+Flourishing Shalefish,1,,,,,Marine Steak,1
+Warden Eel,1,,,,,Fleshy Cylinder,1
+Sweetwater Minnow,1,,,,,Whitebait,1
+Mellifluous Jellyfish,1,,,,,Jellymeat,1
+Blue Ribbontail,1,,,,,Smoked Fish,1
+Jungle Redfin,1,,,,,Edible Chum,1
+Marrow Shark,1,,,,,Brined Flesh,1
+Giant Sunray,1,,,,,Whole Roast Fish,1
+Wispscale Darter,1,,,,,Pickled Fish,1
+Deepwater Angler,1,,,,,Grilled Fillet,1
+Sunspine Basker,1,,,,,Seared Fillet,1
+Colossal Mossback,1,,,,,Seafood 'Feast',1
+Glass Angel,1,,,,,Jellymeat,1
+Mist Serpent,1,,,,,Fleshy Cylinder,1
+Reef Guardian,1,,,,,Marine Steak,1
+Blind Titancore,1,,,,,Fishy Slab,1
+Fool's Goldfish,1,,,,,Fish Fry,1
+Lesser Dustfin,1,,,,,Whitebait,1
+Briny Worm,1,,,,,Poached Worms,1
+Chalkscale Nibber,1,,,,,Smoked Fish,1
+Sweeperfish,1,,,,,Edible Chum,1
+Twilight Cavefish,1,,,,,Brined Flesh,1
+Greater Rocktooth,1,,,,,Whole Roast Fish,1
+Bladdersac,1,,,,,Pickled Fish,1
+Shalebound Starfish,1,,,,,Delicate Legs,1
+Electric Eel,1,,,,,Fleshy Cylinder,1
+Silicate Crab,1,,,,,Peeled Claws,1
+Mantis Ray,1,,,,,Seared Fillet,1
+Saltscale Bloater,1,,,,,Seafood 'Feast',1
+Golden Urchin,1,,,,,Delicate Legs,1
+Bewitching Candlefish,1,,,,,Grilled Fillet,1
+Ferrite Bowfin,1,,,,,Marine Steak,1
+Cave Prowler,1,,,,,Fishy Slab,1
+Fragile Icthyoscale,1,,,,,Fish Fry,1
+Titanworm Larva,1,,,,,Smoked Fish,1
+Ossified Deinosuchus,1,,,,,Brined Flesh,1
+Megalodon,1,,,,,Whole Roast Fish,1
+Vectorfin,1,,,,,Whitebait,1
+Hexscale Minnow,1,,,,,Pickled Fish,1
+Aurora Jellyfish,1,,,,,Jellymeat,1
+Murmurfish,1,,,,,Edible Chum,1
+Inverted Brainfish,1,,,,,Grilled Fillet,1
+Shimmering Lashtail,1,,,,,Seared Fillet,1
+Breach Crawler,1,,,,,Snail Fillet,1
+Anemone Anomaly,1,,,,,Delicate Legs,1
+Erased Clam,1,,,,,Mollusc Flesh,1
+Writhing Brainworm,1,,,,,Poached Worms,1
+Stargazer,1,,,,,Smoked Fish,1
+Non-Euclidean Flatfish,1,,,,,Marine Steak,1
+Sunspot Eel,1,,,,,Fleshy Cylinder,1
+All-Seeing Worm,1,,,,,Poached Worms,1
+Screaming Crab,1,,,,,Peeled Claws,1
+Giant Witchfin,1,,,,,Brined Flesh,1
+Void Squid,1,,,,,Steamed Rubber,1
+Abyssal Horror Egg,1,,,,,Horrifying Mush,1
+Atlantidian Crab,1,,,,,Peeled Claws,1
+Child of Helios,1,,,,,Jellymeat,1
+Many-Mouthed Lunker,1,,,,,Seafood 'Feast',1
+The Angler,1,,,,,Haunted Fillet,1
+Jellymeat,1,Fleshy Cylinder,1,,,Jellied Eel,1
+Any Cooked Seafood,1,Any Cooked Seafood,1,,,Seafood Stew,1
+Any Cooked Seafood,1,Any Cooked Seafood,1,Any Cooked Seafood,1,Sea's Bounty,1
+Any Raw Seafood,1,Any Raw Seafood,1,Any Raw Seafood,1,Salty Platter,1
+Any Seafood,1,Pie Case,1,,,Marine Pie,1
+Any Seafood,1,Kelp Rice,1,,,Fish and Rice,1
+Any Seafood,1,Sweetroot,1,,,Starched Fish,1
+Any Seafood,1,Pulpy Roots,1,,,Starched Fish,1
+Any Raw Seafood,1,Any Raw Seafood,1,,,Assorted Roe,1
+Sugar Dough,1,Any Seafood,1,,,Fish Biscuit,1
+Gas-Worm,1,,,,,Poached Worms,1
+Pressurised Clam,1,,,,,Mollusc Flesh,1
+Inert Whelk,1,,,,,Mollusc Flesh,1
+Jelly Prawn,1,,,,,Shell Puree,1
+Encrusted Worm,1,,,,,Poached Worms,1
+Plasmatic Squid,1,,,,,Steamed Rubber,1
+Cyclonic Eel,1,,,,,Fleshy Cylinder,1
+Ionised Oyster,1,,,,,Mollusc Flesh,1
+Pulp Urchin,1,,,,,Delicate Legs,1
+Metallic Shrimp,1,,,,,Shell Puree,1
+Mineralised Jellyfish,1,,,,,Jellymeat,1
+Vapourfin,1,,,,,Brined Flesh,1
+Crystalfin Shark,1,,,,,Seafood 'Feast',1
+Evaporating Snail,1,,,,,Snail Fillet,1
+Quartzshell Crab,1,,,,,Peeled Claws,1
+Tendrilla,1,,,,,Marine Steak,1
+Wrackjaw,1,,,,,Grilled Tentacle,1
+Mandelbrot Worm,1,,,,,Poached Worms,1
+Mother-of-Quicksilver,1,,,,,Mollusc Flesh,1
+Hyper-cockle,1,,,,,Mollusc Flesh,1
+The Maw of Titan,1,,,,,Fishy Slab,1
+De-pressurised Blob,1,,,,,Assorted Roe,1
+Deepwater Minnow,1,,,,,Fish Fry,1
+Sac-fish,1,,,,,Pickled Fish,1
+Silent Angler,1,,,,,Edible Chum,1
+Whispering Jelly,1,,,,,Jellymeat,1
+Wandering Shellback,1,,,,,Boiled Flipper,1
+Bleached Octopus,1,,,,,Grilled Tentacle,1
+Spratfin,1,,,,,Whitebait,1
+Marine Glowworm,1,,,,,Poached Worms,1
+Bloated Eel,1,,,,,Fleshy Cylinder,1
+Luminescent Coral,1,,,,,Shell Puree,1
+Shrieking Flatfish,1,,,,,Marine Steak,1
+Colossal Squid,1,,,,,Steamed Rubber,1
+Ghost Skipper,1,,,,,Pickled Fish,1
+Abyssal Crab,1,,,,,Peeled Claws,1
+Ocean's Star,1,,,,,Delicate Legs,1
+Colossal Jawfish,1,,,,,Whole Roast Fish,1
+Sentient Crab,1,,,,,Peeled Claws,1
+Brain Eel,1,,,,,Poached Worms,1
+The Hunter Below,1,,,,,Seared Fillet,1
+Leviathan Spawn,1,,,,,Seafood 'Feast',1
+,,,,,,Softened Marrow,1
+,,,,,,Bone Milk,1
+Softened Marrow,1,Softened Marrow,1,,,Bone Broth,1
+Softened Marrow,1,Meaty Chunks,1,,,Bone Broth,1
+Softened Marrow,1,Processed Meat,1,,,Bone Broth,1
+Softened Marrow,1,Meaty Wings,1,,,Bone Broth,1
+Softened Marrow,1,Fiendish Roe,1,,,Bone Broth,1
+Softened Marrow,1,Offal Sac,1,,,Bone Broth,1
+Softened Marrow,1,ProtoSausage,1,,,Bone Broth,1
+Softened Marrow,1,Diplo Chunks,1,,,Bone Broth,1
+Softened Marrow,1,Scaly Meat,1,,,Bone Broth,1
+Softened Marrow,1,Feline Liver,1,,,Bone Broth,1
+Softened Marrow,1,Strider Sausage,1,,,Bone Broth,1
+Softened Marrow,1,Raw Steak,1,,,Bone Broth,1
+Softened Marrow,1,Leg Meat,1,,,Bone Broth,1
+Softened Marrow,1,Smoked Meat,1,,,Bone Broth,1
+Softened Marrow,1,Steamed Vegetables,1,,,Bone Broth,1
+Softened Marrow,1,Sweetroot,1,,,Bone Broth,1
+Softened Marrow,1,Pulpy Roots,1,,,Bone Broth,1

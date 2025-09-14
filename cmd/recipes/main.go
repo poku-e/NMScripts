@@ -26,7 +26,7 @@ import (
 	"encoding/csv"
 	"errors"
 	"flag"
-	"fmt"
+	. "fmt"
 	"io"
 	"net"
 	"net/http"
@@ -115,15 +115,20 @@ func fetch(ctx context.Context, rawURL string) (html string, finalBase *url.URL,
 			if i < len(backoffs)-1 {
 				continue
 			}
-			return "", nil, fmt.Errorf("server error: %s", resp.Status)
+			return "", nil, Errorf("server error: %s", resp.Status)
 		}
 		break
 	}
-	defer resp.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+
+		}
+	}(resp.Body)
 
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
 		b, _ := io.ReadAll(io.LimitReader(resp.Body, 4096))
-		return "", nil, fmt.Errorf("bad status %d: %s", resp.StatusCode, string(b))
+		return "", nil, Errorf("bad status %d: %s", resp.StatusCode, string(b))
 	}
 
 	b, err := io.ReadAll(resp.Body)
@@ -277,7 +282,7 @@ func parseTable(html string, base *url.URL, selector string) ([]Row, error) {
 	}
 	table := doc.Find(selector).First()
 	if table.Length() == 0 {
-		return nil, fmt.Errorf("table not found with selector %q", selector)
+		return nil, Errorf("table not found with selector %q", selector)
 	}
 
 	var out []Row
@@ -306,7 +311,12 @@ func writeCSV(path string, rows []Row) error {
 	if err != nil {
 		return err
 	}
-	defer f.Close()
+	defer func(f *os.File) {
+		err := f.Close()
+		if err != nil {
+			Println(err)
+		}
+	}(f)
 
 	w := csv.NewWriter(f)
 	defer w.Flush()
@@ -373,7 +383,7 @@ func qtyStr(q *int) string {
 	if q == nil {
 		return ""
 	}
-	return fmt.Sprintf("%d", *q)
+	return Sprintf("%d", *q)
 }
 
 // ---------- Main ----------
@@ -420,10 +430,13 @@ func main() {
 		fatal(err)
 	}
 
-	fmt.Printf("OK: %d rows -> %s\n", len(rows), outPath)
+	Printf("OK: %d rows -> %s\n", len(rows), outPath)
 }
 
 func fatal(err error) {
-	fmt.Fprintf(os.Stderr, "ERROR: %v\n", err)
+	_, err = Fprintf(os.Stderr, "ERROR: %v\n", err)
+	if err != nil {
+		return
+	}
 	os.Exit(1)
 }
