@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Nirvana Recipe Finder</title>
+<title>Nirvana Refiner Recipes</title>
 <style>
 :root{
   --mint-25:#daf7ee; --mint-50:#c6f2e6; --mint-100:#a2ecd9;
@@ -131,7 +131,7 @@ kbd{ background:rgba(53,217,179,0.20); border-radius:6px; border:1px solid rgba(
   <div class="card">
     <div class="header">
       <span class="badge">Nirvana</span>
-      <h1>Recipe Finder</h1>
+      <h1>Refiner Recipes</h1>
     </div>
     <div class="sub">Type one or more ingredients. Press <strong>Enter</strong> to add; with the input empty, <strong>Enter</strong> searches.</div>
     <div class="inputRow">
@@ -155,8 +155,8 @@ kbd{ background:rgba(53,217,179,0.20); border-radius:6px; border:1px solid rgba(
   </div>
 </div>
 <nav class="dock" role="navigation" aria-label="Primary">
-  <a class="dock-btn active" href="/"><span class="dock-ico">🏠</span><span class="label">Home</span></a>
-  <a class="dock-btn" href="/refiner"><span class="dock-ico">⚗️</span><span class="label">Refiner</span></a>
+  <a class="dock-btn" href="/"><span class="dock-ico">🏠</span><span class="label">Home</span></a>
+  <a class="dock-btn active" href="/refiner"><span class="dock-ico">⚗️</span><span class="label">Refiner</span></a>
   <a class="dock-btn" href="/glyphs"><span class="dock-ico">🔤</span><span class="label">Glyphs</span></a>
 </nav>
 <script>
@@ -283,14 +283,14 @@ function renderChips(arr){
 }
 async function fetchIngredients(){
   try{
-    const r = await fetch('/api/ingredients');
+    const r = await fetch('/api/refiner/ingredients');
     if(!r.ok) throw new Error('load failed');
     return await r.json();
   }catch{ return []; }
 }
 async function suggest(){
   try{
-    const r = await fetch('/api/suggest?have=' + encodeURIComponent(tokens.join(',')));
+    const r = await fetch('/api/refiner/suggest?have=' + encodeURIComponent(tokens.join(',')));
     if(!r.ok) throw new Error('suggest failed');
     const data = await r.json();
     handleSuggestResp(data);

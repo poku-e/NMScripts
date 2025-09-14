@@ -23,7 +23,7 @@ type glyphCreateReq struct {
 	Description string `json:"description"`
 }
 
-func serve(db *DB, gs *GlyphStore, addr string) error {
+func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux := http.NewServeMux()
 
 	// Recipes API
@@ -34,14 +34,14 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 			return
 		}
 		parts := splitCSVLike(have)
-		mapped, unknown := db.mapUserIngredients(parts)
+		mapped, unknown := foodDB.mapUserIngredients(parts)
 		if mapped == nil {
 			mapped = []string{}
 		}
 		if unknown == nil {
 			unknown = []string{}
 		}
-		sugs := db.suggest(mapped)
+		sugs := foodDB.suggest(mapped)
 		if sugs == nil {
 			sugs = []Recipe{}
 		}
@@ -55,7 +55,39 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 	})
 
 	mux.HandleFunc("/api/ingredients", func(w http.ResponseWriter, r *http.Request) {
-		writeJSON(w, db.AllIngredients)
+		writeJSON(w, foodDB.AllIngredients)
+	})
+
+	// Refiner API
+	mux.HandleFunc("/api/refiner/suggest", func(w http.ResponseWriter, r *http.Request) {
+		have := strings.TrimSpace(r.URL.Query().Get("have"))
+		if have == "" {
+			http.Error(w, "missing 'have' query param", http.StatusBadRequest)
+			return
+		}
+		parts := splitCSVLike(have)
+		mapped, unknown := refDB.mapUserIngredients(parts)
+		if mapped == nil {
+			mapped = []string{}
+		}
+		if unknown == nil {
+			unknown = []string{}
+		}
+		sugs := refDB.suggest(mapped)
+		if sugs == nil {
+			sugs = []Recipe{}
+		}
+
+		resp := apiResp{
+			Mapped:       mapped,
+			Unrecognized: unknown,
+			Suggestions:  sugs,
+		}
+		writeJSON(w, resp)
+	})
+
+	mux.HandleFunc("/api/refiner/ingredients", func(w http.ResponseWriter, r *http.Request) {
+		writeJSON(w, refDB.AllIngredients)
 	})
 
 	// Glyphs API
@@ -88,6 +120,20 @@ func serve(db *DB, gs *GlyphStore, addr string) error {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer
 		if err := glyphsTmpl.Execute(&buf, nil); err != nil {
+			http.Error(w, "template error", http.StatusInternalServerError)
+			return
+		}
+		if _, err := w.Write(buf.Bytes()); err != nil {
+			fmt.Fprintf(os.Stderr, "error writing response: %v\n", err)
+			return
+		}
+	})
+
+	// Refiner UI
+	mux.HandleFunc("/refiner", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "text/html; charset=utf-8")
+		var buf bytes.Buffer
+		if err := refinerTmpl.Execute(&buf, nil); err != nil {
 			http.Error(w, "template error", http.StatusInternalServerError)
 			return
 		}
