@@ -28,8 +28,10 @@ textarea.inputGlass{ min-height:70px; resize:vertical }
   background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.06));
   border:1px solid rgba(255,255,255,0.10); box-shadow:0 6px 18px rgba(0,0,0,0.18);
 }
-.glyphTitle{ font-weight:700; margin-bottom:6px }
-.glyphSymbols{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size:16px }
+.glyphTitle{ font-weight:700; margin-bottom:6px; text-shadow:0 1px 2px rgba(0,0,0,0.4) }
+.glyphSymbols{ display:flex; flex-direction:column; gap:4px }
+.glyphLiteral{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size:16px }
+.glyphGraphic{ font-family: "NMSGlyphsMono","NMS-Glyphs-Mono","NMS Glyphs Mono", ui-monospace, monospace; font-size:24px; line-height:1 }
 .glyphMeta{ color: var(--text-700); font-size:12px; margin-top:4px }
 .gbtn{
   border:1px solid rgba(255,255,255,0.10);
@@ -37,6 +39,7 @@ textarea.inputGlass{ min-height:70px; resize:vertical }
   color: var(--text-900); border-radius:10px; padding:6px 10px; cursor:pointer; font-size:12px;
 }
 .gbtn:hover{ border-color: rgba(53,217,179,0.45); }
+.copyBtn{ text-shadow:0 1px 2px rgba(0,0,0,0.4) }
 .glyphPad{ display:inline-flex; flex-direction:column; gap:8px; margin-top:6px }
 .glyphRow{ display:flex; gap:8px }
 .glyphSpacer{ width:12px }
@@ -98,7 +101,10 @@ function msg(text, ok){
 function glyphCard(g){
   const d = document.createElement('div'); d.className='glyphCard';
   const title = document.createElement('div'); title.className='glyphTitle'; title.textContent = g.name;
-  const sym = document.createElement('div'); sym.className='glyphSymbols glyphFont'; sym.textContent = g.symbols;
+  const sym = document.createElement('div'); sym.className='glyphSymbols';
+  const literal = document.createElement('div'); literal.className='glyphLiteral'; literal.textContent = g.symbols;
+  const graphic = document.createElement('div'); graphic.className='glyphGraphic glyphFont'; graphic.textContent = g.symbols;
+  sym.appendChild(literal); sym.appendChild(graphic);
   const meta = document.createElement('div'); meta.className='glyphMeta';
   const created = new Date(g.created_at);
   meta.textContent = 'Saved ' + created.toLocaleString() + (g.description ? ' • ' + g.description : '');
@@ -108,7 +114,7 @@ function glyphCard(g){
     img.src = g.photo; img.alt = g.name; img.style.maxWidth='100%'; img.style.borderRadius='8px';
   }
   const row = document.createElement('div'); row.style.marginTop = '8px';
-  const copy = document.createElement('button'); copy.className='gbtn'; copy.textContent='Copy Symbols';
+  const copy = document.createElement('button'); copy.className='gbtn copyBtn'; copy.textContent='Copy Symbols';
   copy.onclick = async ()=>{ try{ await navigator.clipboard.writeText(g.symbols); msg('Copied to clipboard', true); }catch{ msg('Copy failed', false); } };
   row.appendChild(copy);
   d.appendChild(title); d.appendChild(sym); d.appendChild(meta); if(img) d.appendChild(img); d.appendChild(row);
