@@ -25,6 +25,49 @@ type glyphCreateReq struct {
 	Description string `json:"description"`
 }
 
+type pageData struct {
+	Title   string
+	Heading string
+	Active  string
+	APIBase string
+	BgDark2 string
+}
+
+func suggestHandler(db *DB) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		have := strings.TrimSpace(r.URL.Query().Get("have"))
+		if have == "" {
+			http.Error(w, "missing 'have' query param", http.StatusBadRequest)
+			return
+		}
+		parts := splitCSVLike(have)
+		mapped, unknown := db.mapUserIngredients(parts)
+		if mapped == nil {
+			mapped = []string{}
+		}
+		if unknown == nil {
+			unknown = []string{}
+		}
+		sugs := db.suggest(mapped)
+		if sugs == nil {
+			sugs = []Recipe{}
+		}
+
+		resp := apiResp{
+			Mapped:       mapped,
+			Unrecognized: unknown,
+			Suggestions:  sugs,
+		}
+		writeJSON(w, resp)
+	}
+}
+
+func ingredientsHandler(db *DB) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		writeJSON(w, db.AllIngredients)
+	}
+}
+
 func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux := http.NewServeMux()
 
@@ -35,68 +78,12 @@ func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux.Handle("/glyph-images/", http.StripPrefix("/glyph-images/", http.FileServer(http.Dir(imgDir))))
 
 	// Recipes API
-	mux.HandleFunc("/api/suggest", func(w http.ResponseWriter, r *http.Request) {
-		have := strings.TrimSpace(r.URL.Query().Get("have"))
-		if have == "" {
-			http.Error(w, "missing 'have' query param", http.StatusBadRequest)
-			return
-		}
-		parts := splitCSVLike(have)
-		mapped, unknown := foodDB.mapUserIngredients(parts)
-		if mapped == nil {
-			mapped = []string{}
-		}
-		if unknown == nil {
-			unknown = []string{}
-		}
-		sugs := foodDB.suggest(mapped)
-		if sugs == nil {
-			sugs = []Recipe{}
-		}
-
-		resp := apiResp{
-			Mapped:       mapped,
-			Unrecognized: unknown,
-			Suggestions:  sugs,
-		}
-		writeJSON(w, resp)
-	})
-
-	mux.HandleFunc("/api/ingredients", func(w http.ResponseWriter, r *http.Request) {
-		writeJSON(w, foodDB.AllIngredients)
-	})
+	mux.HandleFunc("/api/suggest", suggestHandler(foodDB))
+	mux.HandleFunc("/api/ingredients", ingredientsHandler(foodDB))
 
 	// Refiner API
-	mux.HandleFunc("/api/refiner/suggest", func(w http.ResponseWriter, r *http.Request) {
-		have := strings.TrimSpace(r.URL.Query().Get("have"))
-		if have == "" {
-			http.Error(w, "missing 'have' query param", http.StatusBadRequest)
-			return
-		}
-		parts := splitCSVLike(have)
-		mapped, unknown := refDB.mapUserIngredients(parts)
-		if mapped == nil {
-			mapped = []string{}
-		}
-		if unknown == nil {
-			unknown = []string{}
-		}
-		sugs := refDB.suggest(mapped)
-		if sugs == nil {
-			sugs = []Recipe{}
-		}
-
-		resp := apiResp{
-			Mapped:       mapped,
-			Unrecognized: unknown,
-			Suggestions:  sugs,
-		}
-		writeJSON(w, resp)
-	})
-
-	mux.HandleFunc("/api/refiner/ingredients", func(w http.ResponseWriter, r *http.Request) {
-		writeJSON(w, refDB.AllIngredients)
-	})
+	mux.HandleFunc("/api/refiner/suggest", suggestHandler(refDB))
+	mux.HandleFunc("/api/refiner/ingredients", ingredientsHandler(refDB))
 
 	// Glyphs API
 	mux.HandleFunc("/api/glyphs", func(w http.ResponseWriter, r *http.Request) {
@@ -156,7 +143,8 @@ func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux.HandleFunc("/glyphs", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer
-		if err := glyphsTmpl.Execute(&buf, nil); err != nil {
+		data := pageData{Title: "Glyphs", Heading: "Glyphs", Active: "glyphs", BgDark2: "#0e312b"}
+		if err := glyphsTmpl.ExecuteTemplate(&buf, "glyphs", data); err != nil {
 			http.Error(w, "template error", http.StatusInternalServerError)
 			return
 		}
@@ -170,7 +158,14 @@ func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux.HandleFunc("/refiner", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer
-		if err := refinerTmpl.Execute(&buf, nil); err != nil {
+		data := pageData{
+			Title:   "Refiner Recipes",
+			Heading: "Refiner Recipes",
+			Active:  "refiner",
+			APIBase: "/api/refiner",
+			BgDark2: "#0e312b",
+		}
+		if err := recipesTmpl.ExecuteTemplate(&buf, "recipes", data); err != nil {
 			http.Error(w, "template error", http.StatusInternalServerError)
 			return
 		}
@@ -184,7 +179,14 @@ func serve(foodDB *DB, refDB *DB, gs *GlyphStore, addr string) error {
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		var buf bytes.Buffer
-		if err := indexTmpl.Execute(&buf, nil); err != nil {
+		data := pageData{
+			Title:   "Recipe Finder",
+			Heading: "Recipe Finder",
+			Active:  "home",
+			APIBase: "/api",
+			BgDark2: "#18534a",
+		}
+		if err := recipesTmpl.ExecuteTemplate(&buf, "recipes", data); err != nil {
 			http.Error(w, "template error", http.StatusInternalServerError)
 			return
 		}
