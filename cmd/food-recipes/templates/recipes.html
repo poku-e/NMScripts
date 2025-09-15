@@ -1,0 +1,200 @@
+{{ define "recipes" }}
+{{ template "base" . }}
+{{ end }}
+
+{{ define "extraStyle" }}{{ end }}
+
+{{ define "content" }}
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <span class="badge">Nirvana</span>
+      <h1>{{ .Heading }}</h1>
+    </div>
+    <div class="sub">Type one or more ingredients. Press <strong>Enter</strong> to add; with the input empty, <strong>Enter</strong> searches.</div>
+    <div class="inputRow">
+      <div class="tokenBox" id="tokenBox" aria-haspopup="listbox" aria-expanded="false">
+        <div id="tokens"></div>
+        <input id="ingInput" class="tokenInput" type="text" autocomplete="off" placeholder="Type an ingredient and press Enter…"/>
+      </div>
+      <button class="primary" id="btn">Suggest</button>
+      <div class="dropdown" id="dropdown" role="listbox" hidden></div>
+    </div><br>
+    <div class="aux">
+      <div class="chips" id="chips"></div>
+      <div class="footer">Tip: Enter = add, Enter again = search • ⌘/Ctrl+Enter = add & search</div>
+    </div>
+    <div class="result" id="result" style="display:none">
+      <h2>Suggestions</h2>
+      <div id="mapped" class="itemMeta"></div><br>
+      <div id="unknown" class="warn" style="display:none"></div>
+      <div class="list" id="list"></div>
+    </div>
+  </div>
+</div>
+<script>
+let ALL_ING = [];
+const tokens = [];
+const API_BASE = '{{ .APIBase }}';
+const el = (id) => document.getElementById(id);
+const tokenBox = el('tokenBox');
+const tokensWrap = el('tokens');
+const input = el('ingInput');
+const dropdown = el('dropdown');
+const suggestBtn = el('btn');
+function uniquePush(arr, v){ if(!arr.includes(v)) arr.push(v); }
+function removeAt(arr, i){ arr.splice(i, 1); }
+function renderTokens(){
+  tokensWrap.innerHTML = '';
+  tokens.forEach((t,i)=>{
+    const d = document.createElement('div'); d.className='token';
+    const span = document.createElement('span'); span.className='text'; span.textContent=t;
+    const x = document.createElement('button'); x.className='x'; x.type='button'; x.setAttribute('aria-label', 'Remove'); x.textContent='×';
+    x.onclick = () => { removeAt(tokens, i); renderTokens(); };
+    d.appendChild(span); d.appendChild(x);
+    tokensWrap.appendChild(d);
+  });
+  input.placeholder = tokens.length ? '' : 'Type an ingredient and press Enter…';
+  tokenBox.setAttribute('aria-expanded', !dropdown.hidden ? 'true' : 'false');
+}
+let activeIndex = -1;
+function filterSuggestions(q){
+  const s = q.trim().toLowerCase();
+  if(!s) return [];
+  const cand = ALL_ING.filter(x => !tokens.includes(x));
+  const pref = [], sub = [];
+  cand.forEach(c=>{
+    const lc = c.toLowerCase();
+    if(lc.startsWith(s)) pref.push(c);
+    else if(lc.includes(s)) sub.push(c);
+  });
+  return pref.concat(sub).slice(0, 50);
+}
+function renderDropdown(items){
+  dropdown.innerHTML = '';
+  if(items.length === 0){ dropdown.hidden = true; activeIndex = -1; return; }
+  items.forEach((text, idx)=>{
+    const it = document.createElement('div');
+    it.className = 'item' + (idx===activeIndex ? ' active' : '');
+    it.setAttribute('role','option');
+    it.textContent = text;
+    it.onclick = () => { addToken(text); };
+    dropdown.appendChild(it);
+  });
+  dropdown.hidden = false;
+}
+function addToken(text){
+  const t = text.trim();
+  if(!t) return;
+  let final = t;
+  const matches = filterSuggestions(t);
+  if(matches.length && matches[0].toLowerCase() !== t.toLowerCase()){
+    final = matches[0];
+  }
+  uniquePush(tokens, final);
+  input.value = '';
+  activeIndex = -1;
+  renderTokens();
+  renderDropdown([]);
+}
+function currentSuggestions(){
+  return Array.from(dropdown.querySelectorAll('.item')).map(n=>n.textContent);
+}
+input.addEventListener('keydown', (e)=>{
+  const items = currentSuggestions();
+  const commitKeys = ['Enter', 'Tab', ','];
+  if (e.key === 'Escape') { dropdown.hidden = true; activeIndex = -1; return; }
+  if (e.key === 'Backspace' && input.value.trim() === '' && tokens.length) {
+    e.preventDefault(); tokens.pop(); renderTokens(); return;
+  }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    const has = !dropdown.hidden && items.length > 0;
+    if (!has) return;
+    e.preventDefault();
+    if (e.key === 'ArrowDown') activeIndex = (activeIndex + 1) % items.length;
+    else activeIndex = (activeIndex - 1 + items.length) % items.length;
+    renderDropdown(items);
+    return;
+  }
+  if (commitKeys.includes(e.key)) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      if (input.value.trim() !== '') {
+        if (!dropdown.hidden && items.length && activeIndex >= 0) addToken(items[activeIndex]);
+        else addToken(input.value);
+      }
+      if (tokens.length) suggest();
+      return;
+    }
+    if (e.key === 'Enter' && input.value.trim() === '') {
+      e.preventDefault();
+      if (tokens.length) suggest();
+      return;
+    }
+    e.preventDefault();
+    if (!dropdown.hidden && items.length && activeIndex >= 0) addToken(items[activeIndex]);
+    else addToken(input.value);
+  }
+});
+input.addEventListener('input', (e)=>{
+  const q = e.target.value;
+  const items = filterSuggestions(q);
+  activeIndex = -1;
+  renderDropdown(items);
+});
+tokenBox.addEventListener('keydown', (e)=>{
+  if (e.key === 'Enter' && input.value.trim() === '' && tokens.length){
+    e.preventDefault(); suggest();
+  }
+});
+function renderChips(arr){
+  const wrap = el('chips'); wrap.innerHTML='';
+  arr.slice(0,20).forEach(x=>{
+    const c = document.createElement('button'); c.type='button'; c.className='chip'; c.textContent=x;
+    c.onclick = ()=>{ addToken(x); };
+    wrap.appendChild(c);
+  });
+}
+async function fetchIngredients(){
+  try{
+    const r = await fetch(API_BASE + '/ingredients');
+    if(!r.ok) throw new Error('load failed');
+    return await r.json();
+  }catch{ return []; }
+}
+async function suggest(){
+  try{
+    const r = await fetch(API_BASE + '/suggest?have=' + encodeURIComponent(tokens.join(',')));
+    if(!r.ok) throw new Error('suggest failed');
+    const data = await r.json();
+    handleSuggestResp(data);
+  }catch(e){
+    console.error(e);
+  }
+}
+function handleSuggestResp(data){
+  const res = el('result'); res.style.display='block';
+  el('mapped').textContent = 'Using: ' + data.mapped.join(', ');
+  const unk = el('unknown');
+  if(data.unrecognized.length){
+    unk.style.display='block';
+    unk.textContent = 'Unknown: ' + data.unrecognized.join(', ');
+  }else{
+    unk.style.display='none';
+  }
+  const list = document.getElementById('list'); list.innerHTML='';
+  (data.suggestions||[]).forEach(rec=>{
+    const item = document.createElement('div'); item.className='cardItem';
+    const t = document.createElement('div'); t.className='itemTitle';
+    t.textContent = rec.inputs.join(' + ') + ' \u2192 ' + rec.output + ' (x' + rec.qty + ')';
+    const m = document.createElement('div'); m.className='itemMeta';
+    m.textContent = 'Inputs: ' + rec.inputs.join(', ');
+    item.appendChild(t); item.appendChild(m); list.appendChild(item);
+  });
+}
+suggestBtn.onclick = suggest;
+tokenBox.addEventListener('click', ()=> input.focus());
+fetchIngredients().then(arr => { ALL_ING = arr || []; renderChips(ALL_ING); });
+renderTokens();
+</script>
+{{ end }}
